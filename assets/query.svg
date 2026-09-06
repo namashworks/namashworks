@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="A SQLite query typing itself out over a synthetic experiment table, then streaming four grouped rows into a fidelity bar chart">
+  <defs>
+    <linearGradient id="q-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050912"/><stop offset="60%" stop-color="#0a1020"/><stop offset="100%" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="q-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <pattern id="q-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05"/>
+    </pattern>
+    <radialGradient id="q-glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.16"/><stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="q-c1"><rect x="80" y="74" height="24" width="0"><animate attributeName="width" values="0;160" dur="0.38s" begin="0.30s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c2"><rect x="80" y="100" height="24" width="0"><animate attributeName="width" values="0;460" dur="0.38s" begin="0.68s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c3"><rect x="80" y="126" height="24" width="0"><animate attributeName="width" values="0;390" dur="0.38s" begin="1.06s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c4"><rect x="80" y="152" height="24" width="0"><animate attributeName="width" values="0;380" dur="0.38s" begin="1.44s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c5"><rect x="80" y="178" height="24" width="0"><animate attributeName="width" values="0;215" dur="0.38s" begin="1.82s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c6"><rect x="80" y="204" height="24" width="0"><animate attributeName="width" values="0;250" dur="0.38s" begin="2.20s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c7"><rect x="80" y="230" height="24" width="0"><animate attributeName="width" values="0;160" dur="0.38s" begin="2.58s" fill="freeze"/></rect></clipPath>
+    <clipPath id="q-c8"><rect x="80" y="256" height="24" width="0"><animate attributeName="width" values="0;270" dur="0.38s" begin="2.96s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <rect width="1200" height="520" fill="url(#q-bg)"/>
+  <circle cx="880" cy="330" r="320" fill="url(#q-glow)"/>
+  <rect width="1200" height="520" fill="url(#q-scan)"/>
+  <rect x="16" y="16" width="1168" height="488" rx="10" fill="none" stroke="#1c3247" stroke-width="1.2"/>
+
+  <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.5">
+    <path d="M16,44 V16 H44"/><path d="M1156,16 H1184 V44"/>
+    <path d="M1184,476 V504 H1156"/><path d="M44,504 H16 V476"/>
+    <animate attributeName="opacity" values="0.5;0.85;0.5" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+
+  <path d="M16,26 a10,10 0 0 1 10,-10 H1174 a10,10 0 0 1 10,10 V52 H16 Z" fill="#0c182b"/>
+  <line x1="16" y1="52" x2="1184" y2="52" stroke="#1c3247" stroke-width="1.2"/>
+  <rect x="40" y="28" width="10" height="10" fill="#22d3ee"/>
+  <text x="62" y="38" fill="#c9d5e4" font-size="12.5" letter-spacing="1.2"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">experiments.db</text>
+  <text x="196" y="38" fill="#475569" font-size="10.5" letter-spacing="2"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SQLITE · SYNTHETIC FIXTURE · 14 ROWS · 2 CIRCUITS</text>
+  <circle cx="1076" cy="33" r="4" fill="#fbbf24"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="1088" y="37" fill="#fbbf24" font-size="10.5" letter-spacing="2"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">FIXTURE</text>
+
+  <text x="36" y="330" fill="#22d3ee" opacity="0.13" font-size="14"
+        font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif">
+    <tspan x="36" dy="0">ク</tspan><tspan x="36" dy="19">エ</tspan><tspan x="36" dy="19">リ</tspan>
+  </text>
+
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="15" xml:space="preserve">
+    <text x="88" y="92" clip-path="url(#q-c1)"><tspan fill="#a78bfa">SELECT</tspan><tspan fill="#c9d5e4"> backend</tspan><tspan fill="#64748b">,</tspan></text>
+    <text x="88" y="118" clip-path="url(#q-c2)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">ROUND</tspan><tspan fill="#64748b">(</tspan><tspan fill="#22d3ee">AVG</tspan><tspan fill="#64748b">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#64748b">), </tspan><tspan fill="#fbbf24">3</tspan><tspan fill="#64748b">) </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> mean_fidelity</tspan><tspan fill="#64748b">,</tspan></text>
+    <text x="88" y="144" clip-path="url(#q-c3)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#64748b">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#64748b">)         </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> scored</tspan><tspan fill="#64748b">,</tspan></text>
+    <text x="88" y="170" clip-path="url(#q-c4)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#64748b">(*)                </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> runs</tspan></text>
+    <text x="88" y="196" clip-path="url(#q-c5)"><tspan fill="#a78bfa">FROM</tspan><tspan fill="#c9d5e4">   experiment_runs</tspan></text>
+    <text x="88" y="222" clip-path="url(#q-c6)"><tspan fill="#a78bfa">WHERE</tspan><tspan fill="#c9d5e4">  circuit </tspan><tspan fill="#64748b">= </tspan><tspan fill="#fbbf24">'ghz_8q'</tspan></text>
+    <text x="88" y="248" clip-path="url(#q-c7)"><tspan fill="#a78bfa">GROUP BY</tspan><tspan fill="#c9d5e4"> backend</tspan></text>
+    <text x="88" y="274" clip-path="url(#q-c8)"><tspan fill="#a78bfa">ORDER BY</tspan><tspan fill="#c9d5e4"> mean_fidelity </tspan><tspan fill="#a78bfa">DESC</tspan><tspan fill="#64748b">;</tspan></text>
+  </g>
+  <rect x="341" y="261" width="9" height="17" fill="#22d3ee" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.36s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" begin="3.37s" repeatCount="indefinite"/>
+  </rect>
+
+  <line x1="80" y1="304" x2="1120" y2="304" stroke="#1c3247" stroke-width="1.2" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
+  </line>
+
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11.5" fill="#64748b" letter-spacing="1.4" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
+    <text x="88" y="332">BACKEND</text>
+    <text x="430" y="332" text-anchor="end">MEAN_FIDELITY</text>
+    <text x="520" y="332" text-anchor="end">SCORED</text>
+    <text x="600" y="332" text-anchor="end">RUNS</text>
+    <text x="672" y="332">MEAN FIDELITY · AXIS RUNS 0.88 TO 1.00, NOT ZERO</text>
+  </g>
+  <line x1="672" y1="344" x2="672" y2="462" stroke="#1c3247" stroke-width="1.2" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
+  </line>
+  <line x1="1062" y1="344" x2="1062" y2="462" stroke="#1c3247" stroke-width="1" stroke-dasharray="3 4" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
+  </line>
+
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="14">
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.90s" fill="freeze"/>
+      <text x="88" y="368" fill="#c9d5e4">simulator_a</text>
+      <text x="430" y="368" fill="#7fe7f7" text-anchor="end">0.982</text>
+      <text x="520" y="368" fill="#94a3b8" text-anchor="end">3</text>
+      <text x="600" y="368" fill="#94a3b8" text-anchor="end">3</text>
+      <rect x="672" y="359" height="10" rx="5" width="0" fill="url(#q-bar)"><animate attributeName="width" values="0;336" dur="0.7s" begin="3.90s" fill="freeze"/></rect>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.15s" fill="freeze"/>
+      <text x="88" y="394" fill="#c9d5e4">simulator_b</text>
+      <text x="430" y="394" fill="#7fe7f7" text-anchor="end">0.964</text>
+      <text x="520" y="394" fill="#94a3b8" text-anchor="end">3</text>
+      <text x="600" y="394" fill="#94a3b8" text-anchor="end">3</text>
+      <rect x="672" y="385" height="10" rx="5" width="0" fill="url(#q-bar)"><animate attributeName="width" values="0;282" dur="0.7s" begin="4.15s" fill="freeze"/></rect>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.40s" fill="freeze"/>
+      <text x="88" y="420" fill="#c9d5e4">simulator_c</text>
+      <text x="430" y="420" fill="#7fe7f7" text-anchor="end">0.941</text>
+      <text x="520" y="420" fill="#94a3b8" text-anchor="end">3</text>
+      <text x="600" y="420" fill="#94a3b8" text-anchor="end">3</text>
+      <rect x="672" y="411" height="10" rx="5" width="0" fill="url(#q-bar)"><animate attributeName="width" values="0;213" dur="0.7s" begin="4.40s" fill="freeze"/></rect>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.3s" begin="4.65s" fill="freeze"/>
+      <text x="88" y="446" fill="#c9d5e4">simulator_d</text>
+      <text x="430" y="446" fill="#7fe7f7" text-anchor="end">0.902</text>
+      <text x="520" y="446" fill="#fbbf24" text-anchor="end">2</text>
+      <text x="600" y="446" fill="#94a3b8" text-anchor="end">3</text>
+      <rect x="672" y="437" height="10" rx="5" width="0" fill="url(#q-bar)"><animate attributeName="width" values="0;96" dur="0.7s" begin="4.65s" fill="freeze"/></rect>
+    </g>
+  </g>
+
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="5.20s" fill="freeze"/>
+    <text x="88" y="486" fill="#475569" font-size="11" letter-spacing="1.6"
+          font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SIMULATOR_D SCORED 2 OF 3 RUNS. AVG SKIPS THE NULL, COUNT(*) DOES NOT. THAT GAP IS WHY BOTH COLUMNS ARE HERE.</text>
+  </g>
+</svg>

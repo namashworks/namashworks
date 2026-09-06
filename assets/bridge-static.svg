@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Bridge ADK: agents from three vendor SDKs served on one A2A wire">
+  <defs>
+    <linearGradient id="br-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070c1a" />
+      <stop offset="60%" stop-color="#0d1428" />
+      <stop offset="100%" stop-color="#141d3a" />
+    </linearGradient>
+    <radialGradient id="br-glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="br-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#br-bg)" />
+  <circle cx="570" cy="158" r="230" fill="url(#br-glow)" />
+  <rect width="1200" height="300" fill="url(#br-scan)" />
+  <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.45">
+    <path d="M16,44 V16 H44" />
+    <path d="M1156,16 H1184 V44" />
+    <path d="M1184,256 V284 H1156" />
+    <path d="M44,284 H16 V256" />
+  </g>
+  <text x="30" y="104" fill="#22d3ee" opacity="0.13" font-size="13" font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif">
+    <tspan x="30" dy="0">エ</tspan>
+    <tspan x="30" dy="18">ー</tspan>
+    <tspan x="30" dy="18">ジ</tspan>
+    <tspan x="30" dy="18">ェ</tspan>
+    <tspan x="30" dy="18">ン</tspan>
+    <tspan x="30" dy="18">ト</tspan>
+  </text>
+  <text x="60" y="44" fill="#22d3ee" opacity="0.85" font-size="11" letter-spacing="3.2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">BRIDGE ADK · AGENT INTEROPERABILITY</text>
+  <!-- wires -->
+  <g fill="none" stroke="#243049" stroke-width="1.4">
+    <path id="br-p1" d="M260,96 C345,96 350,158 420,158" />
+    <path id="br-p2" d="M260,158 L420,158" />
+    <path id="br-p3" d="M260,220 C345,220 350,158 420,158" />
+    <path id="br-p4" d="M720,158 L900,158" />
+  </g>
+  <!-- packets in -->
+  <!-- packets out -->
+  <!-- source SDKs -->
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14">
+    <rect x="60" y="73" width="200" height="46" rx="8" fill="#0f1729" stroke="#243049" />
+    <circle cx="84" cy="96" r="5" fill="#4285F4" />
+    <text x="102" y="101" fill="#c9d5e4">Google ADK</text>
+    <rect x="60" y="135" width="200" height="46" rx="8" fill="#0f1729" stroke="#243049" />
+    <circle cx="84" cy="158" r="5" fill="#e6edf3" />
+    <text x="102" y="163" fill="#c9d5e4">OpenAI Agents SDK</text>
+    <rect x="60" y="197" width="200" height="46" rx="8" fill="#0f1729" stroke="#243049" />
+    <circle cx="84" cy="220" r="5" fill="#D97757" />
+    <text x="102" y="225" fill="#c9d5e4">Claude Agent SDK</text>
+  </g>
+  <!-- the bridge -->
+  <rect x="420" y="130" width="300" height="56" rx="10" fill="#0d1b2e" stroke="#22d3ee" stroke-width="1.4" />
+  <rect x="420" y="130" width="300" height="56" rx="10" fill="none" stroke="#22d3ee" stroke-width="1.4"></rect>
+  <text x="570" y="164" text-anchor="middle" fill="#7fe7f7" font-size="16" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">bridge_adk.serve(agent)</text>
+  <text x="570" y="208" text-anchor="middle" fill="#64748b" font-size="11" letter-spacing="1.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">framework auto detected · no subclassing · no boilerplate</text>
+  <!-- the wire out -->
+  <rect x="900" y="135" width="240" height="46" rx="8" fill="#0f1729" stroke="#243049" />
+  <circle cx="924" cy="158" r="5" fill="#a78bfa" />
+  <text x="942" y="163" fill="#c9d5e4" font-size="14" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Any A2A client</text>
+  <text x="900" y="200" fill="#475569" font-size="10.5" letter-spacing="1.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">A2A · A LINUX FOUNDATION STANDARD</text>
+  <text x="60" y="276" fill="#475569" font-size="11" letter-spacing="1.8" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">ONE CALL REPLACES ~50 LINES OF EXECUTOR, CARD AND HANDLER BOILERPLATE PER AGENT</text>
+</svg>

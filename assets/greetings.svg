@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Greetings in nine languages">
+  <defs>
+    <linearGradient id="g-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1024"/>
+      <stop offset="60%" stop-color="#0d1428"/>
+      <stop offset="100%" stop-color="#121a34"/>
+    </linearGradient>
+    <linearGradient id="g-sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="g-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="150" fill="url(#g-bg)"/>
+  <rect width="1200" height="150" fill="url(#g-scan)"/>
+
+  <!-- greeting, cross fading through nine languages over one 21.6s cycle -->
+  <g text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" fill="#e8edf3" font-size="44">
+    <text x="600" y="74" opacity="0">こんにちは<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0;0.012;0.099;0.1111;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">안녕하세요<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1111;0.1231;0.2101;0.2222;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">你好<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2222;0.2342;0.3212;0.3333;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">食飽未<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3453;0.4323;0.4444;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">שלום<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4444;0.4564;0.5434;0.5556;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">Hallo<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5556;0.5676;0.6546;0.6667;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">Bonjour<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6787;0.7657;0.7778;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">G&apos;day<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7778;0.7898;0.8768;0.8889;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="74" opacity="0">नमस्ते<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8889;0.9009;0.9879;1;1" dur="21.6s" repeatCount="indefinite"/></text>
+  </g>
+
+  <g text-anchor="middle" font-family="'JetBrains Mono','SF Mono',Consolas,monospace" fill="#64748b" font-size="11" letter-spacing="3">
+    <text x="600" y="106" opacity="0">日本 · JAPAN<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0;0.012;0.099;0.1111;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">한국 · KOREA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1111;0.1231;0.2101;0.2222;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">中国 · CHINA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2222;0.2342;0.3212;0.3333;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">臺灣 · TAIWAN, IN HOKKIEN<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3453;0.4323;0.4444;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">ISRAEL<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4444;0.4564;0.5434;0.5556;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">DEUTSCHLAND · GERMANY<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5556;0.5676;0.6546;0.6667;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">CANADA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6787;0.7657;0.7778;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">AUSTRALIA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7778;0.7898;0.8768;0.8889;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">भारत · INDIA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8889;0.9009;0.9879;1;1" dur="21.6s" repeatCount="indefinite"/></text>
+  </g>
+
+  <!-- nine step markers -->
+  <g fill="#2b3648">
+    <circle cx="512" cy="130" r="3"/><circle cx="534" cy="130" r="3"/><circle cx="556" cy="130" r="3"/>
+    <circle cx="578" cy="130" r="3"/><circle cx="600" cy="130" r="3"/><circle cx="622" cy="130" r="3"/>
+    <circle cx="644" cy="130" r="3"/><circle cx="666" cy="130" r="3"/><circle cx="688" cy="130" r="3"/>
+  </g>
+  <g fill="#22d3ee">
+    <circle cx="512" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0;0.012;0.099;0.1111;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="534" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1111;0.1231;0.2101;0.2222;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="556" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2222;0.2342;0.3212;0.3333;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="578" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3453;0.4323;0.4444;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4444;0.4564;0.5434;0.5556;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="622" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5556;0.5676;0.6546;0.6667;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="644" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6787;0.7657;0.7778;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="666" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7778;0.7898;0.8768;0.8889;1" dur="21.6s" repeatCount="indefinite"/></circle>
+    <circle cx="688" cy="130" r="3.4" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8889;0.9009;0.9879;1;1" dur="21.6s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- cycle progress hairline -->
+  <rect x="0" y="147" width="0" height="1.6" fill="url(#g-sweep)">
+    <animate attributeName="width" values="0;1200" dur="21.6s" repeatCount="indefinite"/>
+  </rect>
+</svg>

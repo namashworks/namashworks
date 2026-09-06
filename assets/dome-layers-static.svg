@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="Three shield layers: evidence for what goes in, evaluation for what comes out, observability for what happens next">
+  <defs>
+    <linearGradient id="dl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060b1c" />
+      <stop offset="60%" stop-color="#0a1330" />
+      <stop offset="100%" stop-color="#101c40" />
+    </linearGradient>
+    <pattern id="dl-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05" />
+    </pattern>
+    <radialGradient id="dl-glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#4fd6c8" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#4fd6c8" stop-opacity="0" />
+    </radialGradient>
+    <filter id="dl-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+  <rect width="1200" height="240" fill="url(#dl-bg)" />
+  <circle cx="330" cy="300" r="300" fill="url(#dl-glow)" />
+  <rect width="1200" height="240" fill="url(#dl-scan)" />
+  <g stroke="#4fd6c8" stroke-width="1.6" fill="none" opacity="0.42">
+    <path d="M16,44 V16 H44" />
+    <path d="M1156,16 H1184 V44" />
+    <path d="M1184,196 V224 H1156" />
+    <path d="M44,224 H16 V196" />
+  </g>
+  <text x="56" y="40" fill="#4fd6c8" opacity="0.9" font-size="11" letter-spacing="3.2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">DEFENCE IN DEPTH · FOR AI SYSTEMS</text>
+  <text x="30" y="96" fill="#4fd6c8" opacity="0.13" font-size="13" font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif">
+    <tspan x="30" dy="0">シ</tspan>
+    <tspan x="30" dy="18">ー</tspan>
+    <tspan x="30" dy="18">ル</tspan>
+    <tspan x="30" dy="18">ド</tspan>
+  </text>
+  <!-- three shields, outermost first -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M85.5,278 A250,250 0 0 1 574.5,278" stroke="#4fd6c8" stroke-width="2.6" opacity="0.85" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></path>
+    <path d="M144,290 A190,190 0 0 1 516,290" stroke="#4a86f7" stroke-width="2.6" opacity="0.85" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></path>
+    <path d="M203,303 A130,130 0 0 1 457,303" stroke="#ff7a5c" stroke-width="2.6" opacity="0.85" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></path>
+  </g>
+  <!-- a charge running around each shield -->
+  <g fill="none" stroke-linecap="round" opacity="0.95">
+    <path d="M85.5,278 A250,250 0 0 1 574.5,278" stroke="#c9fff8" stroke-width="3" pathLength="100" stroke-dasharray="7 93"></path>
+    <path d="M144,290 A190,190 0 0 1 516,290" stroke="#cfe0ff" stroke-width="3" pathLength="100" stroke-dasharray="7 93"></path>
+    <path d="M203,303 A130,130 0 0 1 457,303" stroke="#ffd2c6" stroke-width="3" pathLength="100" stroke-dasharray="7 93"></path>
+  </g>
+  <g fill="#e6fbff" filter="url(#dl-soft)" opacity="0.5">
+    <circle cx="330" cy="80" r="4"></circle>
+    <circle cx="330" cy="140" r="4"></circle>
+    <circle cx="330" cy="200" r="4"></circle>
+  </g>
+  <!-- what each layer is for -->
+  <g opacity="1">
+    <circle cx="668" cy="73" r="6" fill="#4fd6c8"></circle>
+    <text x="688" y="78" fill="#4fd6c8" font-size="14" letter-spacing="2.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">EVIDENCE</text>
+    <text x="688" y="99" fill="#94a3b8" font-size="13" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Nothing enters a system of mine without a source I can point at.</text>
+  </g>
+  <g opacity="1">
+    <circle cx="668" cy="138" r="6" fill="#4a86f7"></circle>
+    <text x="688" y="143" fill="#7aa5f9" font-size="14" letter-spacing="2.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">EVALUATION</text>
+    <text x="688" y="164" fill="#94a3b8" font-size="13" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">What comes out is measured against a baseline, not a feeling.</text>
+  </g>
+  <g opacity="1">
+    <circle cx="668" cy="203" r="6" fill="#ff7a5c"></circle>
+    <text x="688" y="208" fill="#ff9d85" font-size="14" letter-spacing="2.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">OBSERVABILITY</text>
+    <text x="688" y="229" fill="#94a3b8" font-size="13" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">When it drifts in production, the logs say so before a user does.</text>
+  </g>
+</svg>

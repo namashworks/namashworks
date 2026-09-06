@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Namash Aggarwal, AI Engineer">
+  <defs>
+    <linearGradient id="b-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070c1a"/>
+      <stop offset="55%" stop-color="#0d1428"/>
+      <stop offset="100%" stop-color="#16203f"/>
+    </linearGradient>
+    <linearGradient id="b-edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="b-rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="b-name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f0f6fc"/>
+      <stop offset="0.44" stop-color="#f0f6fc"/>
+      <stop offset="0.5" stop-color="#7fe7f7"/>
+      <stop offset="0.56" stop-color="#f0f6fc"/>
+      <stop offset="1" stop-color="#f0f6fc"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-1.1 0; 1.1 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="b-glowA" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b-glowB" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="b-soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.4"/>
+    </filter>
+    <pattern id="b-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#b-bg)"/>
+  <circle cx="1020" cy="105" r="240" fill="url(#b-glowA)"/>
+  <circle cx="770" cy="290" r="205" fill="url(#b-glowB)"/>
+  <rect width="1200" height="300" fill="url(#b-scan)"/>
+  <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.42">
+    <path d="M16,44 V16 H44"/><path d="M1156,16 H1184 V44"/>
+    <path d="M1184,256 V284 H1156"/><path d="M44,284 H16 V256"/>
+    <animate attributeName="opacity" values="0.42;0.78;0.42" dur="4.6s" repeatCount="indefinite"/>
+  </g>
+  <text x="1170" y="66" fill="#22d3ee" opacity="0.14" font-size="14"
+        font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif">
+    <tspan x="1170" dy="0">エ</tspan><tspan x="1170" dy="19">ン</tspan><tspan x="1170" dy="19">ジ</tspan>
+    <tspan x="1170" dy="19">ニ</tspan><tspan x="1170" dy="19">ア</tspan>
+  </text>
+
+  <g stroke="url(#b-edge)" stroke-width="1.15" fill="none" opacity="0.5"
+     stroke-dasharray="100" stroke-dashoffset="100" pathLength="100" stroke-linecap="round">
+    <line x1="698" y1="148" x2="758" y2="92"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0s" fill="freeze"/></line>
+    <line x1="698" y1="148" x2="742" y2="220"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.12s" fill="freeze"/></line>
+    <line x1="758" y1="92"  x2="822" y2="166"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.24s" fill="freeze"/></line>
+    <line x1="742" y1="220" x2="822" y2="166"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.32s" fill="freeze"/></line>
+    <line x1="742" y1="220" x2="806" y2="248"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.44s" fill="freeze"/></line>
+    <line x1="822" y1="166" x2="884" y2="108"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.52s" fill="freeze"/></line>
+    <line x1="822" y1="166" x2="896" y2="212"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.60s" fill="freeze"/></line>
+    <line x1="806" y1="248" x2="896" y2="212"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.70s" fill="freeze"/></line>
+    <line x1="758" y1="92"  x2="884" y2="108"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.78s" fill="freeze"/></line>
+    <line x1="884" y1="108" x2="950" y2="150"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.88s" fill="freeze"/></line>
+    <line x1="896" y1="212" x2="950" y2="150"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="0.96s" fill="freeze"/></line>
+    <line x1="950" y1="150" x2="986" y2="138" opacity="0.6"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="1.06s" fill="freeze"/></line>
+  </g>
+
+  <g fill="#cbd5e1">
+    <circle cx="698" cy="148" r="2.6"><animate attributeName="opacity" values="0.5;1;0.5" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="758" cy="92"  r="3.1"><animate attributeName="opacity" values="0.6;1;0.6" dur="5.3s" begin="0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="742" cy="220" r="2.4"><animate attributeName="opacity" values="0.45;1;0.45" dur="3.7s" begin="1.1s" repeatCount="indefinite"/></circle>
+    <circle cx="822" cy="166" r="3.4"><animate attributeName="opacity" values="0.7;1;0.7" dur="6.2s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="806" cy="248" r="2.2"><animate attributeName="opacity" values="0.4;0.95;0.4" dur="4.6s" begin="1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="884" cy="108" r="2.8"><animate attributeName="opacity" values="0.55;1;0.55" dur="5.1s" begin="0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="896" cy="212" r="2.6"><animate attributeName="opacity" values="0.5;1;0.5" dur="4.4s" begin="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="150" r="3.0"><animate attributeName="opacity" values="0.6;1;0.6" dur="5.8s" begin="1.4s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g stroke="#fbbf24" stroke-width="1" opacity="0.30" stroke-linecap="round">
+    <line x1="1046" y1="72" x2="1064" y2="244"/>
+    <line x1="986" y1="136" x2="1122" y2="148"/>
+  </g>
+  <g fill="#fbbf24" filter="url(#b-soft)" opacity="0.55">
+    <circle cx="1046" cy="72" r="5"/><circle cx="1064" cy="244" r="5.6"/>
+    <circle cx="1122" cy="148" r="4.6"/><circle cx="986" cy="136" r="4.2"/>
+    <circle cx="1030" cy="180" r="2.6"/>
+  </g>
+  <g fill="#fde68a">
+    <circle cx="1046" cy="72"  r="3.2"><animate attributeName="opacity" values="0.7;1;0.7" dur="3.9s" repeatCount="indefinite"/></circle>
+    <circle cx="1064" cy="244" r="3.7"><animate attributeName="opacity" values="0.75;1;0.75" dur="4.8s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1122" cy="148" r="3.0"><animate attributeName="opacity" values="0.7;1;0.7" dur="4.2s" begin="1.3s" repeatCount="indefinite"/></circle>
+    <circle cx="986"  cy="136" r="2.7"><animate attributeName="opacity" values="0.65;1;0.65" dur="5.4s" begin="2.0s" repeatCount="indefinite"/></circle>
+    <circle cx="1030" cy="180" r="1.7"><animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.3s" begin="0.9s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="1002" y="278" fill="#fbbf24" opacity="0.34" font-size="9.5" letter-spacing="3"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SOUTHERN CROSS</text>
+
+  <text x="70" y="122" fill="url(#b-name)" font-size="50" font-weight="700" letter-spacing="3"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">NAMASH AGGARWAL</text>
+  <rect x="72" y="142" width="272" height="2.5" fill="url(#b-rule)"/>
+  <text x="72" y="176" fill="#22d3ee" font-size="14.5" font-weight="600" letter-spacing="3.4"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">AI ENGINEER · DATA SCIENTIST · DATA ENGINEER</text>
+  <text x="72" y="214" fill="#94a3b8" font-size="20"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">I build the reliability layer under AI systems.</text>
+  <text x="72" y="248" fill="#64748b" font-size="12.5" letter-spacing="1.6"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">healthcare · medtech · robotics · mining · space · quantum</text>
+</svg>
