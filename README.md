@@ -31,14 +31,19 @@ the benchmark, the adapter, the failure mode that made it into the README before
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/dome-layers-static.svg" />
-  <img src="assets/dome-layers.svg" alt="The three shield layers named: evidence for what goes in, evaluation for what comes out, observability for what happens next." width="100%" />
+  <img src="assets/dome-layers.svg" alt="Three shield layers with monitor drones on patrol. An unsourced claim is intercepted at the evidence layer, a silent regression at the evaluation layer, and production drift at the observability layer." width="100%" />
 </picture>
 
 </div>
 
 Iron Dome is layered on purpose: no single shield is trusted to catch everything. I build AI the same way.
 **Evidence** for what goes in, **evaluation** for what comes out, **observability** for what happens next.
-The illustration is a metaphor for how I think about reliability, not a diagram of any real system.
+
+Watch what each layer stops, because that is the whole argument for having three. An **unsourced claim** never
+reaches the model. A **silent regression** gets past the first shield and is caught by the eval before release.
+**Production drift** gets past both and is caught by the logs, before a user is the one who notices.
+Monitor drones patrol each shield in between. The illustration is a metaphor for how I think about reliability,
+not a diagram of any real system.
 
 ## 今 · Now
 
