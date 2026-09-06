@@ -5,6 +5,11 @@
   <img src="assets/banner.svg" alt="Namash Aggarwal. AI engineer, data scientist, data engineer. Healthcare, medtech, robotics, mining, space, quantum." width="100%" />
 </picture>
 
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/greetings-static.svg" />
+  <img src="assets/greetings.svg" alt="Hello cycling through nine languages: Japanese, Korean, Chinese, Taiwanese Hokkien, Hebrew, German, French, English and Hindi." width="100%" />
+</picture>
+
 ### I build the reliability layer under AI systems.
 
 Most AI demos work once. The engineering that interests me is the part that has to work every time.
@@ -278,8 +283,8 @@ repositories above, because then the conversation starts with something concrete
 <div align="center">
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/greetings-static.svg" />
-  <img src="assets/greetings.svg" alt="Greetings cycling through nine languages: Japanese, Korean, Chinese, Taiwanese Hokkien, Hebrew, German, French, English and Hindi." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/thanks-static.svg" />
+  <img src="assets/thanks.svg" alt="Thanks for viewing, cycling through the same nine languages: Japanese, Korean, Chinese, Taiwanese Hokkien, Hebrew, German, French, English and Hindi." width="100%" />
 </picture>
 
 *If it does not work yet, the README says so.*
