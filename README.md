@@ -27,7 +27,10 @@ the benchmark, the adapter, the failure mode that made it into the README before
 
 <div align="center">
 
-<img src="assets/city.jpg" alt="An anime night city under three nested shield domes in teal, blue and coral." width="100%" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/city.jpg" />
+  <img src="assets/city-defended.svg" alt="An anime night city under three shield domes. Monitor drones patrol the sky and three incoming threats are intercepted on the outer shield." width="100%" />
+</picture>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/dome-layers-static.svg" />
@@ -165,14 +168,14 @@ Eight places, eight ideas about engineering I have actually taken something from
 
 | | Idea | What it looks like in my repos |
 | :-- | :-- | :-- |
-| :jp: **Japan** | 現地現物 *genchi genbutsu*, go and look at the actual thing | I read the raw rows and the failure cases before I choose a model |
-| :kr: **Korea** | 빨리빨리 *ppalli ppalli*, speed is itself a feature | Every architecture doc ends in a two week vertical slice, not a roadmap |
-| :de: **Germany** | *Gründlichkeit*, thoroughness as a form of respect | A licence, a `CITATION.cff` and a test folder before I call a repo public |
-| :israel: **Israel** | ראש גדול *rosh gadol*, take the bigger job than the one you were handed | I wrote a new learning algorithm rather than tune another boosted tree |
-| :cn: **China** | 实事求是 *shi shi qiu shi*, seek truth from facts | Benchmarks and ablations, not adjectives |
-| :taiwan: **Taiwan** | Yield thinking | A design that cannot run reliably at cost is not a design, so every doc carries an operating envelope |
-| :canada: **Canada** | Review first, in plain language | `docs/` gets written before the API is frozen |
-| :australia: **Australia** | Fair dinkum | If it does not work yet, the README says so |
+| <img src="assets/flag-jp.svg" width="22" alt=""> **Japan** | 現地現物 *genchi genbutsu*, go and look at the actual thing | I read the raw rows and the failure cases before I choose a model |
+| <img src="assets/flag-kr.svg" width="22" alt=""> **Korea** | 빨리빨리 *ppalli ppalli*, speed is itself a feature | Every architecture doc ends in a two week vertical slice, not a roadmap |
+| <img src="assets/flag-de.svg" width="22" alt=""> **Germany** | *Gründlichkeit*, thoroughness as a form of respect | A licence, a `CITATION.cff` and a test folder before I call a repo public |
+| <img src="assets/flag-il.svg" width="22" alt=""> **Israel** | ראש גדול *rosh gadol*, take the bigger job than the one you were handed | I wrote a new learning algorithm rather than tune another boosted tree |
+| <img src="assets/flag-cn.svg" width="22" alt=""> **China** | 实事求是 *shi shi qiu shi*, seek truth from facts | Benchmarks and ablations, not adjectives |
+| <img src="assets/flag-tw.svg" width="22" alt=""> **Taiwan** | Yield thinking | A design that cannot run reliably at cost is not a design, so every doc carries an operating envelope |
+| <img src="assets/flag-ca.svg" width="22" alt=""> **Canada** | Review first, in plain language | `docs/` gets written before the API is frozen |
+| <img src="assets/flag-au.svg" width="22" alt=""> **Australia** | Fair dinkum | If it does not work yet, the README says so |
 
 ## Outils · Toolbox
 
