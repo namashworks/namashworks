@@ -10,9 +10,7 @@
   <img src="assets/greetings.svg" alt="Hello cycling through nine languages: Japanese, Korean, Chinese, Taiwanese Hokkien, Hebrew, German, French, English and Hindi." width="100%" />
 </picture>
 
-### I build the reliability layer under AI systems.
-
-Most AI demos work once. The engineering that interests me is the part that has to work every time.
+### Most AI demos work once. I care about the part that has to work every time.
 
 So this page is not a list of things I have used. It is the **failure model I design against**,
 and the code where I handle each failure.
@@ -49,14 +47,13 @@ and each one needs its own layer.
 | **Hardware drift** | Yesterday's benchmark quietly stops being true. Every number you compare against it is now a lie. | **Observability** | [qledger](https://github.com/namashworks/qledger) |
 
 <details>
-<summary><b>Evidence · the rule that makes a fabricated fact impossible</b></summary>
+<summary><b>Evidence · the rule that makes a claim auditable</b></summary>
 
 <br>
 
-EGKG is an **architecture document**, not a shipped product. Naive LLM extraction of a concept graph
-lands near coin-flip accuracy, and
-the errors are the dangerous kind: invented concepts, fabricated prerequisites, and mastery asserted
-with no supporting behaviour. So the graph is built on one rule that everything else serves:
+EGKG is an **architecture document**, not a shipped product. Point an LLM at lecture notes and ask for
+a concept graph and the failures are the dangerous kind: invented concepts, fabricated prerequisites,
+mastery asserted with no supporting behaviour. So the design turns on one rule:
 
 > Every node and edge stores an `evidence_span` pointing at the exact source text or assessment event
 > it came from. **No evidence, no node.**
@@ -65,6 +62,11 @@ Levels 1 to 3 can be extracted from material. Levels 4 and 5, reasoning and mast
 from behaviour. The system is built to say *not enough evidence* rather than guess, because in a study
 tool "you have mastered recursion" said wrongly is worse than saying nothing.
 
+To be exact about what this buys: provenance makes a claim **auditable**, not **true**. It does not
+make the source correct, and it does not prove the claim follows from the span. It moves the argument
+from "trust the model" to "here is the line it came from, go and check", which is the only version a
+reviewer can actually work with.
+
 </details>
 
 <details>
@@ -72,8 +74,8 @@ tool "you have mastered recursion" said wrongly is worse than saying nothing.
 
 <br>
 
-A neural network cannot tell you why. STAM can, because a prediction is just an inverse-distance vote
-of the nearest anchors, and you can ask which anchors voted:
+A STAM prediction is an inverse-distance vote of the nearest anchors, so you can ask which anchors
+voted and by how much, and get objects back rather than a saliency heatmap:
 
 ```python
 # prediction = inverse-distance weighted vote of the k nearest anchors
@@ -85,8 +87,12 @@ explain(x) -> [(anchor_id, coordinate, weight, theta), ...]
 ```
 
 Anchors also gain mass as they age, so old knowledge resists being overwritten while new anchors stay
-mobile. That is how it learns online without a replay buffer, which is the usual place a silent
-regression hides.
+mobile. That is how it learns online without a replay buffer.
+
+Two honest limits. Neural networks are not uninterpretable, they just have different tools; an anchor
+trace is a different mechanism, not an exclusive ability. And being able to inspect a prediction is
+not the same as knowing it is right. Catching a regression still needs a held-out set, a baseline and
+a number you compare against it.
 
 </details>
 
@@ -101,12 +107,16 @@ not just the answer:
 ```python
 with QLedger("research.db") as db:
     result = db.run(qc, experiment_id=exp, shots=4096, seed_simulator=42)
-# seed, shots, backend, timing and the noise profile are all stored,
-# so the same run replays exactly, months later
+# seed, shots, backend, timing and the noise profile are all stored
 ```
 
 T1, T2, gate fidelities and readout errors are tracked over time, which is what turns "the numbers
-moved" into "the hardware drifted on this date".
+moved" into "something changed on this date, and here is the run to compare against".
+
+Worth being precise, because this is where people overclaim. A stored seed reproduces a **simulator**
+run under the same conditions. **Physical quantum hardware is stochastic and drifts**, so no seed
+makes a real device repeat itself. What the record buys you on hardware is a comparable baseline, not
+a replay.
 
 </details>
 
@@ -121,6 +131,10 @@ bridge_adk.serve(my_agent, port=9000)          # Google ADK, OpenAI or Claude, a
 remote = bridge_adk.connect("http://localhost:9000")
 answer = await remote.ask("Summarize the latest sales report")
 ```
+
+One thing that belongs next to that snippet: **the documented v0.1 server has no built-in
+authentication.** It is for a trusted network or a local loop. Anything reachable from outside needs
+an access boundary in front of it, and the README says so rather than letting someone find out.
 
 - **Publishing** [`STAM`](https://github.com/namashworks/stam-ml), a learning algorithm of my own: CPU native, online, and traceable back to the anchors that made the call
 - **Learning** quantum error mitigation, and how far a 3B model can be pushed on careful clinical language
@@ -153,9 +167,10 @@ the panel below is worth watching.
 - **On the left**, each arriving sample pulls the three nearest anchors toward it. The pull is divided
   by mass, so anchors that have won many samples barely move. Early structure sets, new anchors stay
   mobile. That is the stability-plasticity trade, handled without a replay buffer.
-- **On the right**, the last twelve error *signs*. Balanced plus and minus means the anchor is sitting
-  in noise, entropy stays near 1.0, and it holds. One-sided signs mean the model is genuinely
-  underfitting there, entropy collapses, and below **0.7** the anchor divides.
+- **On the right**, the last twelve error *signs*. Balanced plus and minus reads as noise, entropy
+  stays near 1.0, and the anchor holds. One-sided signs suggest the model is biased there, entropy
+  collapses, and below **0.7** the anchor divides. Until twelve signs have accumulated the panel says
+  **collecting**, because a half-full window is not a reading.
 - **The target steps at u = 0.62.** Anchors that land on that step get one-sided errors and split.
   Anchors in the noisy flat region keep a mixed window and stay put. Five anchors become nine, and the
   Gabriel graph rewires around each new one.
@@ -165,7 +180,7 @@ the panel below is worth watching.
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stam-static.svg" />
   <img src="assets/stam.svg" alt="STAM running online. Samples arrive and pull the three nearest anchors, weighted by mass so heavy anchors resist. A window of error signs is shown, and when their Shannon entropy falls below 0.7 the anchor splits and the Gabriel graph rewires." width="100%" />
 </picture>
-<sub><b>That panel is the algorithm actually running.</b> The generator implements KAF, the entropy trigger and the Gabriel graph, runs 224 samples, and records the real trajectory. Nothing in it is hand-drawn.</sub>
+<sub><b>That panel is the algorithm actually running.</b> <a href="tools/make-stam.mjs">tools/make-stam.mjs</a> implements KAF, the entropy trigger and the Gabriel graph, runs 224 samples, and records the real trajectory into keyframes. It ships in this repository, so you can run it and get the same panel. Illustration parameters are noted at the top of the file.</sub>
 </div>
 
 <details>
@@ -187,14 +202,20 @@ def should_split(error_signs, threshold=0.7):
 splitting there just fits the noise. `H` near **0.0** means the anchor is wrong in the same direction
 every time, which is a real gap in the model. Only the second case earns a new anchor.
 
-The same window is what makes a silent regression visible: an anchor whose sign entropy suddenly
-collapses is telling you the data moved underneath it.
+A runnable version of just the statistic is in [`examples/entropy.py`](examples/entropy.py).
+
+It is a **heuristic**, and worth saying so plainly. Balanced signs do not prove the errors are random,
+and a short one-sided window does not prove underfitting or drift. Window length, error magnitude and
+sample size all move the answer. What it buys is a cheap, principled reason to look, in place of
+splitting every time an error happens to be large.
 
 </details>
 
 ## 系統 · The whole stack
 
-Sixteen repositories, and they are not a pile. Each layer is built so the layer above it can trust it.
+Sixteen repositories, and they are not a random pile. The layers group the work by what it is for,
+from an algorithm of my own at the bottom to quantum tooling at the top. It is a map of where things
+sit, not a claim that these sixteen run as one deployed system.
 
 <div align="center">
 <picture>
@@ -227,6 +248,8 @@ answer you can defend. This is the shape of that question.
 
 <div align="center">
 <picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 560px)" srcset="assets/query-mobile-static.svg" />
+  <source media="(max-width: 560px)" srcset="assets/query-mobile.svg" />
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/query-static.svg" />
   <img src="assets/query.svg" alt="A SQLite query typing itself out, grouping experiment runs by backend, then streaming four rows into a mean fidelity bar chart." width="100%" />
 </picture>
@@ -260,9 +283,12 @@ ORDER BY mean_fidelity DESC;
 | simulator_d | 0.902 | 2 | 3 |
 
 The backends are named `simulator_a` to `simulator_d` because this is a synthetic fixture, not a
-hardware benchmark. Those four rows are executed output: the fixture and the query ship with this
-page, and a test runs them against SQLite and fails if the picture, this table and the `.sql` file
-ever disagree.
+hardware benchmark.
+
+Those four rows are executed output, and you do not have to take my word for it. The fixture and the
+query ship in this repository: [`examples/fixture.sql`](examples/fixture.sql) and
+[`examples/query.sql`](examples/query.sql). Run them against any SQLite and you get the table above.
+A test does exactly that and fails if the picture, this table and the `.sql` file ever disagree.
 
 </details>
 

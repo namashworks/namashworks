@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+node_modules/
+
+# review copies kept beside the repo, not part of the profile
+2/
