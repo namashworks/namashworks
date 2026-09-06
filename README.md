@@ -144,13 +144,53 @@ Three repositories are covered in the threat model above. These are the other th
 | **[Genetic Transformer](https://github.com/namashworks/Genetic-Transformer)** | A transformer for translating between English and DNA, RNA, codons, amino acids and protein. | Giving attention the codon table as structure, instead of hoping it rediscovers biology from scratch. |
 | **[Gen Z Medical Advisor](https://github.com/namashworks/Genz-medical-advisor)** | Qwen 2.5 3B, LoRA fine tuned on synthetic data, for health guidance people will actually read. **Experimental research, not a clinically validated product.** | Refusal behaviour at 3B, where there is no headroom to be sloppy about what the model declines to answer. |
 
+## STAM, in motion
+
+Most prototype methods split a node when the **error is large**, which means noise makes them split
+forever. STAM splits on the **entropy of the error signs** instead, and that one change is the reason
+the panel below is worth watching.
+
+- **On the left**, each arriving sample pulls the three nearest anchors toward it. The pull is divided
+  by mass, so anchors that have won many samples barely move. Early structure sets, new anchors stay
+  mobile. That is the stability-plasticity trade, handled without a replay buffer.
+- **On the right**, the last twelve error *signs*. Balanced plus and minus means the anchor is sitting
+  in noise, entropy stays near 1.0, and it holds. One-sided signs mean the model is genuinely
+  underfitting there, entropy collapses, and below **0.7** the anchor divides.
+- **The target steps at u = 0.62.** Anchors that land on that step get one-sided errors and split.
+  Anchors in the noisy flat region keep a mixed window and stay put. Five anchors become nine, and the
+  Gabriel graph rewires around each new one.
+
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stam-static.svg" />
-  <img src="assets/stam.svg" alt="STAM: anchors drift onto a data manifold, connect into a topology, and are pulled toward each new incoming sample." width="100%" />
+  <img src="assets/stam.svg" alt="STAM running online. Samples arrive and pull the three nearest anchors, weighted by mass so heavy anchors resist. A window of error signs is shown, and when their Shannon entropy falls below 0.7 the anchor splits and the Gabriel graph rewires." width="100%" />
 </picture>
-<sub><b>STAM, learning.</b> Anchors drift onto the manifold, connect into a topology, then get pulled toward each new sample. Older anchors are heavier and resist, which is how it stays stable without a replay buffer.</sub>
+<sub><b>That panel is the algorithm actually running.</b> The generator implements KAF, the entropy trigger and the Gabriel graph, runs 224 samples, and records the real trajectory. Nothing in it is hand-drawn.</sub>
 </div>
+
+<details>
+<summary><b>The rule that tells noise apart from structure</b></summary>
+
+<br>
+
+```python
+def should_split(error_signs, threshold=0.7):
+    """Shannon entropy of the SIGN sequence, not the error magnitude."""
+    p = sum(error_signs) / len(error_signs)          # fraction that were positive
+    if p in (0.0, 1.0):
+        return True                                   # perfectly one-sided: split
+    H = -p * log2(p) - (1 - p) * log2(1 - p)
+    return H < threshold                              # biased, not noisy: split
+```
+
+`H` near **1.0** means the errors are as likely positive as negative. That is stochastic noise, and
+splitting there just fits the noise. `H` near **0.0** means the anchor is wrong in the same direction
+every time, which is a real gap in the model. Only the second case earns a new anchor.
+
+The same window is what makes a silent regression visible: an anchor whose sign entropy suddenly
+collapses is telling you the data moved underneath it.
+
+</details>
 
 ## 系統 · The whole stack
 
