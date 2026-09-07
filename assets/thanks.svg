@@ -38,7 +38,7 @@
     <text x="600" y="106" opacity="0">臺灣 · TAIWAN, IN HOKKIEN<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3333;0.3453;0.4323;0.4444;1" dur="21.6s" repeatCount="indefinite"/></text>
     <text x="600" y="106" opacity="0">ISRAEL<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4444;0.4564;0.5434;0.5556;1" dur="21.6s" repeatCount="indefinite"/></text>
     <text x="600" y="106" opacity="0">DEUTSCHLAND · GERMANY<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5556;0.5676;0.6546;0.6667;1" dur="21.6s" repeatCount="indefinite"/></text>
-    <text x="600" y="106" opacity="0">CANADA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6787;0.7657;0.7778;1" dur="21.6s" repeatCount="indefinite"/></text>
+    <text x="600" y="106" opacity="0">FRANCE · CANADA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6667;0.6787;0.7657;0.7778;1" dur="21.6s" repeatCount="indefinite"/></text>
     <text x="600" y="106" opacity="0">AUSTRALIA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7778;0.7898;0.8768;0.8889;1" dur="21.6s" repeatCount="indefinite"/></text>
     <text x="600" y="106" opacity="0">भारत · INDIA<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8889;0.9009;0.9879;1;1" dur="21.6s" repeatCount="indefinite"/></text>
   </g>

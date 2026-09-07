@@ -302,18 +302,21 @@ I would rather be clear about which list a thing is on. The second one is ambiti
 
 ## Arbeitsweise · How I work
 
-Eight places, eight ideas about engineering I have actually taken something from.
+Eight ideas that changed how I engineer, and where I picked each one up. Some are real expressions
+with long histories. Some are industrial habits, and I have said which is which. **None of them are
+claims about what people from those places are like.**
 
 | | Idea | What it looks like in my repos |
 | :-- | :-- | :-- |
-| <img src="assets/flag-jp.svg" width="22" alt=""> **Japan** | 現地現物 *genchi genbutsu*, go and look at the actual thing | I read the raw rows and the failure cases before I choose a model |
-| <img src="assets/flag-kr.svg" width="22" alt=""> **Korea** | 빨리빨리 *ppalli ppalli*, speed is itself a feature | Every architecture doc ends in a two week vertical slice, not a roadmap |
-| <img src="assets/flag-de.svg" width="22" alt=""> **Germany** | *Gründlichkeit*, thoroughness as a form of respect | A licence, a `CITATION.cff` and a test folder before I call a repo public |
-| <img src="assets/flag-il.svg" width="22" alt=""> **Israel** | ראש גדול *rosh gadol*, take the bigger job than the one you were handed | I wrote a new learning algorithm rather than tune another boosted tree |
-| <img src="assets/flag-cn.svg" width="22" alt=""> **China** | 实事求是 *shi shi qiu shi*, seek truth from facts | Benchmarks and ablations, not adjectives |
-| <img src="assets/flag-tw.svg" width="22" alt=""> **Taiwan** | Yield thinking | A design that cannot run reliably at cost is not a design, so every doc carries an operating envelope |
-| <img src="assets/flag-ca.svg" width="22" alt=""> **Canada** | Review first, in plain language | `docs/` gets written before the API is frozen |
-| <img src="assets/flag-au.svg" width="22" alt=""> **Australia** | Fair dinkum | If it does not work yet, the README says so |
+| <img src="assets/flag-jp.svg" width="22" alt=""> **Japan** | 現地現物 *genchi genbutsu*, "actual place, actual thing". From the Toyota Way: go to the source and see the facts yourself. | I read the raw rows and the failure cases before I choose a model |
+| <img src="assets/flag-kr.svg" width="22" alt=""> **Korea** | 빨리빨리 *ppalli ppalli*, "quickly, quickly". Koreans argue about its cost as much as its benefit, and both sides have a point. | Every architecture doc ends in a two week vertical slice, not a roadmap |
+| <img src="assets/flag-de.svg" width="22" alt=""> **Germany** | *Gründlichkeit*: do it properly, not merely sufficiently. | A licence, a `CITATION.cff` and a test folder before I call a repo public |
+| <img src="assets/flag-fr.svg" width="22" alt=""> **France** | *"Ce qui se conçoit bien s'énonce clairement"*, Boileau, 1674. If you cannot say it plainly, you have not finished thinking it. | If I cannot state a design in one sentence, the design is not done, and rewriting the sentence will not fix that |
+| <img src="assets/flag-il.svg" width="22" alt=""> **Israel** | ראש גדול *rosh gadol*, "big head": own the objective, not just the instruction. Its opposite, *rosh katan*, is doing exactly what you were told. | I wrote a new learning algorithm rather than tune another boosted tree |
+| <img src="assets/flag-cn.svg" width="22" alt=""> **China** | 实事求是 *shi shi qiu shi*, "seek truth from facts". About two thousand years old, from the Book of Han. | Benchmarks and ablations, not adjectives |
+| <img src="assets/flag-tw.svg" width="22" alt=""> **Taiwan** | Not a saying, an industrial habit. Taiwanese fabs compete on **yield**: manufacturability, process stability and defect reduction, rather than peak specs. | A design that cannot run reliably at cost is not a design, so every doc carries an operating envelope |
+| <img src="assets/flag-ca.svg" width="22" alt=""> **Canada** | Plain language is a national standard there, CAN-ASC-3.1. Write so the next reader does not need you in the room. | If a doc needs me there to explain it, the doc is not finished |
+| <img src="assets/flag-au.svg" width="22" alt=""> **Australia** | *Fair dinkum*: genuine, honest, no varnish. | If it does not work yet, the README says so |
 
 ## Outils · Toolbox
 
