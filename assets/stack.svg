@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img"
-     aria-label="A universe in every layer. A moon rises from behind a planet's limb through its phases while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum.">
+     aria-label="A universe in every layer. A moon rises through its phases from behind a planet's limb while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum.">
+  <!--
+    One 24 second cycle, repeating forever. It repeats on purpose: this panel sits
+    far down the page, so a reveal that played once at page load would always be
+    over before anyone scrolled to it.
+      0.5s  moon clears the limb and begins to wax
+      1.8s  rings light inner to outer, one every half second
+      5.9s  full moon, seven rings lit
+      6.4s  nine seals lock and dawn breaks
+      7.6s  holds until 22.5s, then fades and begins again
+  -->
   <defs>
     <radialGradient id="cc-sky" cx="34%" cy="78%" r="95%">
       <stop offset="0%" stop-color="#1b0f3a"/>
@@ -33,15 +43,14 @@
       <stop offset="100%" stop-color="#f4e8ff"/>
     </linearGradient>
     <filter id="cc-glow" x="-120%" y="-120%" width="340%" height="340%"><feGaussianBlur stdDeviation="7"/></filter>
-    <filter id="cc-soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.4"/></filter>
     <clipPath id="cc-above" clipPathUnits="userSpaceOnUse">
       <path clip-rule="evenodd" d="M0,0 H1200 V700 H0 Z M2450,2400 a1850,1850 0 1,0 -3700,0 a1850,1850 0 1,0 3700,0"/>
     </clipPath>
-    <!-- the terminator: a shadow sliding clear of the disc, new moon to full -->
     <mask id="cc-phase">
       <circle cx="400" cy="520" r="46" fill="#ffffff"/>
       <circle cy="520" r="50" fill="#000000" cx="400">
-        <animate attributeName="cx" values="400;534" dur="5.6s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.5 1"/>
+        <animate attributeName="cx" values="400;400;534;534;400" keyTimes="0;0.0125;0.2458;0.96;1"
+                 dur="24s" repeatCount="indefinite"/>
       </circle>
     </mask>
     <path id="cc-tomoe" d="M0,0 a5,5 0 1,0 0.01,0 Z M-3.4,-3.6 C-11,-1.6 -17,4.4 -19,13.4 C-14,5.4 -8,1.4 -1.2,-0.6 Z"/>
@@ -57,21 +66,29 @@
     <circle cx="452" cy="62" r="1.2" opacity="0.65"><animate attributeName="opacity" values="0.25;0.85;0.25" dur="4.9s" begin="0.3s" repeatCount="indefinite"/></circle>
     <circle cx="536" cy="140" r="1" opacity="0.5"/>
     <circle cx="604" cy="252" r="1.4" opacity="0.75"><animate attributeName="opacity" values="0.3;0.95;0.3" dur="5.1s" begin="2.1s" repeatCount="indefinite"/></circle>
-    <circle cx="676" cy="88" r="1.1" opacity="0.55"/>
+    <circle cx="620" cy="88" r="1.1" opacity="0.55"/>
     <circle cx="720" cy="330" r="1.3" opacity="0.6"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="6.3s" begin="1.1s" repeatCount="indefinite"/></circle>
     <circle cx="120" cy="330" r="1.1" opacity="0.5"><animate attributeName="opacity" values="0.2;0.75;0.2" dur="4.5s" begin="2.6s" repeatCount="indefinite"/></circle>
     <circle cx="58" cy="452" r="1" opacity="0.45"/>
     <circle cx="196" cy="470" r="0.9" opacity="0.4"/>
     <circle cx="372" cy="118" r="0.9" opacity="0.45"/>
-    <circle cx="640" cy="186" r="0.9" opacity="0.4"/>
     <circle cx="284" cy="292" r="1" opacity="0.5"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="5.8s" begin="3.2s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- the distant Otsutsuki moon, always in the sky -->
+  <g opacity="0.9">
+    <circle cx="672" cy="146" r="30" fill="none" stroke="#8049e2" stroke-width="1" opacity="0.35"/>
+    <circle cx="672" cy="146" r="19" fill="#1a0f38"/>
+    <path d="M672,127 a19,19 0 1,0 0.01,0 Z M672,127 a19,19 0 0,1 0,38 a13,15 0 0,1 0,-38 Z" fill="#e8d4ff" opacity="0.92"/>
+    <circle cx="672" cy="146" r="19" fill="none" stroke="#f4e8ff" stroke-width="0.7" opacity="0.5"/>
   </g>
 
   <g clip-path="url(#cc-above)">
     <!-- the moon, rising and waxing -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="2.2s" begin="0.2s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" from="0 150" to="0 0" dur="5.6s" begin="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0083;0.1;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0 150;0 150;0 0;0 0;0 150"
+                        keyTimes="0;0.0125;0.2458;0.96;1" dur="24s" repeatCount="indefinite"/>
       <circle cx="400" cy="520" r="300" fill="url(#cc-dawn)"/>
       <g mask="url(#cc-phase)">
         <circle cx="400" cy="520" r="46" fill="url(#cc-moon)"/>
@@ -81,73 +98,77 @@
           <ellipse cx="392" cy="540" rx="6" ry="5"/>
           <ellipse cx="416" cy="503" rx="5" ry="4"/>
         </g>
-        <!-- the moon turns as the seal takes it -->
         <circle cx="400" cy="520" r="46" fill="#d4744f" opacity="0">
-          <animate attributeName="opacity" values="0;0.62" dur="0.9s" begin="6.35s" fill="freeze"/>
+          <animate attributeName="opacity" values="0;0;0.62;0.62;0;0" keyTimes="0;0.2646;0.3;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
         </circle>
         <circle cx="400" cy="520" r="46" fill="url(#cc-moon)" opacity="0">
-          <animate attributeName="opacity" values="0;0.18" dur="0.5s" begin="6.35s" fill="freeze"/>
+          <animate attributeName="opacity" values="0;0;0.18;0.18;0;0" keyTimes="0;0.2646;0.3;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
         </circle>
       </g>
       <circle cx="400" cy="520" r="46" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.35"/>
     </g>
 
-    <!-- seven layers, lighting inner to outer -->
-    <g fill="none" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round">
-      <circle cx="400" cy="520" r="55" stroke="#f4e8ff" stroke-width="2.6">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="1.8s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="100" stroke="#ddc4ff" stroke-width="2.4">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="2.3s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="145" stroke="#c6a2fb" stroke-width="2.2">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="2.8s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="190" stroke="#ae82f5" stroke-width="2.1">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="3.3s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="235" stroke="#9764ee" stroke-width="2">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="3.8s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="280" stroke="#8049e2" stroke-width="1.9">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="4.3s" fill="freeze"/></circle>
-      <circle cx="400" cy="520" r="325" stroke="#6a34cf" stroke-width="1.8">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="1.1s" begin="4.8s" fill="freeze"/></circle>
+    <!-- seven layers. pathLength must sit on each circle: it is NOT inherited from a <g> -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="400" cy="520" r="55" stroke="#f4e8ff" stroke-width="2.6" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.0750;0.1208;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="100" stroke="#ddc4ff" stroke-width="2.4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.0958;0.1417;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="145" stroke="#c6a2fb" stroke-width="2.2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.1167;0.1625;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="190" stroke="#ae82f5" stroke-width="2.1" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.1375;0.1833;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="235" stroke="#9764ee" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.1583;0.2042;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="280" stroke="#8049e2" stroke-width="1.9" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.1792;0.2250;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="325" stroke="#6a34cf" stroke-width="1.8" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset" values="100;100;0;0;100;100" keyTimes="0;0.2000;0.2458;0.94;0.96;1" dur="24s" repeatCount="indefinite"/></circle>
     </g>
 
-    <g fill="none" pathLength="100" stroke-dasharray="4 96" stroke-linecap="round" opacity="0.95">
-      <circle cx="400" cy="520" r="100" stroke="#ffffff" stroke-width="2.6">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="7s" begin="3.4s" repeatCount="indefinite"/></circle>
-      <circle cx="400" cy="520" r="190" stroke="#ffffff" stroke-width="2.4">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="9s" begin="4.4s" repeatCount="indefinite"/></circle>
-      <circle cx="400" cy="520" r="325" stroke="#e8d4ff" stroke-width="2.2">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="12s" begin="5.9s" repeatCount="indefinite"/></circle>
+    <!-- a charge running each lit ring -->
+    <g fill="none" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.95;0.95;0;0" keyTimes="0;0.2458;0.26;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <circle cx="400" cy="520" r="100" stroke="#ffffff" stroke-width="2.6" pathLength="100" stroke-dasharray="4 96">
+        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="190" stroke="#ffffff" stroke-width="2.4" pathLength="100" stroke-dasharray="4 96">
+        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="400" cy="520" r="325" stroke="#e8d4ff" stroke-width="2.2" pathLength="100" stroke-dasharray="4 96">
+        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="12s" repeatCount="indefinite"/></circle>
     </g>
 
     <!-- electron shells: the same drawing read as an atom -->
-    <g fill="none" stroke="#a36bf3" stroke-width="1.1" opacity="0.34">
-      <ellipse cx="400" cy="520" rx="300" ry="104"/>
-      <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(60 400 520)"/>
-      <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(120 400 520)"/>
-    </g>
-    <g fill="#f4e8ff">
-      <circle r="4.5" opacity="0.95">
-        <animateMotion dur="9s" repeatCount="indefinite" path="M700,520 a300,104 0 1,0 -600,0 a300,104 0 1,0 600,0"/>
-      </circle>
-      <circle r="4" opacity="0.9">
-        <animateMotion dur="11s" begin="-3s" repeatCount="indefinite" path="M550,780 a300,104 0 1,0 -300,-520 a300,104 0 1,0 300,520" transform="rotate(60 400 520)"/>
-      </circle>
-      <circle r="4" opacity="0.9">
-        <animateMotion dur="13s" begin="-7s" repeatCount="indefinite" path="M250,780 a300,104 0 1,0 300,-520 a300,104 0 1,0 -300,520" transform="rotate(120 400 520)"/>
-      </circle>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.10;0.16;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <g fill="none" stroke="#a36bf3" stroke-width="1.1" opacity="0.34">
+        <ellipse cx="400" cy="520" rx="300" ry="104"/>
+        <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(60 400 520)"/>
+        <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(120 400 520)"/>
+      </g>
+      <g fill="#f4e8ff">
+        <circle r="4.5" opacity="0.95">
+          <animateMotion dur="9s" repeatCount="indefinite" path="M700,520 a300,104 0 1,0 -600,0 a300,104 0 1,0 600,0"/>
+        </circle>
+        <circle r="4" opacity="0.9">
+          <animateMotion dur="11s" begin="-3s" repeatCount="indefinite" path="M550,780 a300,104 0 1,0 -300,-520 a300,104 0 1,0 300,520" transform="rotate(60 400 520)"/>
+        </circle>
+        <circle r="4" opacity="0.9">
+          <animateMotion dur="13s" begin="-7s" repeatCount="indefinite" path="M250,780 a300,104 0 1,0 300,-520 a300,104 0 1,0 -300,520" transform="rotate(120 400 520)"/>
+        </circle>
+      </g>
     </g>
 
     <!-- nine seals lock on at full moon: three inner, six outer -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0.85" dur="0.6s" begin="5.9s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0;0.85;0.85;0;0" keyTimes="0;0.2458;0.2708;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
       <g fill="#2e1338">
-        <animateTransform attributeName="transform" type="rotate" from="0 400 520" to="360 400 520" dur="48s" begin="6.5s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 400 520" to="360 400 520" dur="48s" repeatCount="indefinite"/>
         <use href="#cc-tomoe" transform="translate(400,375)"/>
         <use href="#cc-tomoe" transform="translate(525.6,447.5) rotate(60)"/>
         <use href="#cc-tomoe" transform="translate(274.4,447.5) rotate(-60)"/>
       </g>
       <g fill="#3a1a44">
-        <animateTransform attributeName="transform" type="rotate" from="360 400 520" to="0 400 520" dur="76s" begin="6.5s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="360 400 520" to="0 400 520" dur="76s" repeatCount="indefinite"/>
         <use href="#cc-tomoe" transform="translate(400,240) scale(0.85)"/>
         <use href="#cc-tomoe" transform="translate(642.5,380) rotate(60) scale(0.85)"/>
         <use href="#cc-tomoe" transform="translate(642.5,660) rotate(120) scale(0.85)"/>
@@ -158,20 +179,19 @@
     </g>
 
     <!-- the light breaks: dawn, which is what Akatsuki means -->
-    <circle cx="400" cy="520" r="0" fill="none" stroke="#ffa06b" stroke-width="0" opacity="0">
-      <animate attributeName="r" values="46;980" dur="1.1s" begin="6.4s" fill="freeze"/>
-      <animate attributeName="stroke-width" values="26;0" dur="1.1s" begin="6.4s" fill="freeze"/>
-      <animate attributeName="opacity" values="0;0.5;0" dur="1.4s" begin="6.4s" fill="freeze"/>
+    <circle cx="400" cy="520" r="46" fill="none" stroke="#ffa06b" stroke-width="26" opacity="0">
+      <animate attributeName="r" values="46;46;980;980;46" keyTimes="0;0.2667;0.3167;0.99;1" dur="24s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="26;26;0;0;26" keyTimes="0;0.2667;0.3167;0.99;1" dur="24s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.5;0;0" keyTimes="0;0.2667;0.2729;0.3167;1" dur="24s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="400" cy="520" r="0" fill="none" stroke="#ffe3d2" stroke-width="0" opacity="0">
-      <animate attributeName="r" values="46;700" dur="0.8s" begin="6.42s" fill="freeze"/>
-      <animate attributeName="stroke-width" values="7;0" dur="1s" begin="6.42s" fill="freeze"/>
-      <animate attributeName="opacity" values="0;0.55;0" dur="1s" begin="6.42s" fill="freeze"/>
+    <circle cx="400" cy="520" r="46" fill="none" stroke="#ffe3d2" stroke-width="7" opacity="0">
+      <animate attributeName="r" values="46;46;700;700;46" keyTimes="0;0.2675;0.3092;0.99;1" dur="24s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="7;7;0;0;7" keyTimes="0;0.2675;0.3092;0.99;1" dur="24s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;0.55;0;0" keyTimes="0;0.2675;0.2717;0.3092;1" dur="24s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- and holds: a crimson bleed that falls off before the legend -->
     <rect x="-60" y="0" width="920" height="700" fill="url(#cc-bleed)" opacity="0">
-      <animate attributeName="opacity" values="0;0.62;0.34" keyTimes="0;0.42;1" dur="2.2s" begin="6.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0;0.62;0.34;0.34;0;0" keyTimes="0;0.2667;0.2842;0.33;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     </rect>
   </g>
 
@@ -180,7 +200,7 @@
   <path d="M-250,700 A1850,1850 0 0 1 1450,700" fill="none" stroke="url(#cc-rim)" stroke-width="2.4" opacity="0.85"/>
   <path d="M-250,700 A1850,1850 0 0 1 1450,700" fill="none" stroke="#c6a2fb" stroke-width="9" opacity="0.14" filter="url(#cc-glow)"/>
   <path d="M-250,700 A1850,1850 0 0 1 1450,700" fill="none" stroke="#ff9366" stroke-width="5" opacity="0">
-    <animate attributeName="opacity" values="0;0.24" dur="1.6s" begin="6.5s" fill="freeze"/>
+    <animate attributeName="opacity" values="0;0;0.24;0.24;0;0" keyTimes="0;0.2708;0.3167;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
   </path>
 
   <!-- dawn clouds. Akatsuki means dawn -->
@@ -206,38 +226,38 @@
         font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Foundations at the centre. Frontiers at the edge.</text>
   <line x1="748" y1="152" x2="1160" y2="152" stroke="#2a1a52" stroke-width="1.2"/>
 
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.8s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2000;0.2150;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="182" width="10" height="10" fill="#6a34cf"/>
     <text x="770" y="192" fill="#8f6ae0" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">QUANTUM</text>
     <text x="770" y="210" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">qledger</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.3s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1792;0.1942;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="250" width="10" height="10" fill="#8049e2"/>
     <text x="770" y="260" fill="#8049e2" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">KNOWLEDGE</text>
     <text x="770" y="278" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">egkg-architecture · StudyMate</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.8s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1583;0.1733;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="318" width="10" height="10" fill="#9764ee"/>
     <text x="770" y="328" fill="#9764ee" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">AGENTS</text>
     <text x="770" y="346" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Bridge-ADK · IPipe · Chatform</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.3s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1375;0.1525;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="386" width="10" height="10" fill="#ae82f5"/>
     <text x="770" y="396" fill="#ae82f5" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">APPLIED AI</text>
     <text x="770" y="414" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genz-medical-advisor · Successapp · autoRECON</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.8s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1167;0.1317;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="454" width="10" height="10" fill="#c6a2fb"/>
     <text x="770" y="464" fill="#c6a2fb" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">MODELS</text>
     <text x="770" y="482" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genetic-Transformer · FNet-Pytorch-Implementation</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.3s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0958;0.1108;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="522" width="10" height="10" fill="#ddc4ff"/>
     <text x="770" y="532" fill="#ddc4ff" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">DATA</text>
     <text x="770" y="550" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Json-to-Toon-converter · multiformat-toon</text>
     <text x="770" y="566" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Synthetic-Data-Generator-with-converter</text>
   </g>
-  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.8s" fill="freeze"/>
+  <g opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0750;0.0900;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <rect x="748" y="608" width="10" height="10" fill="#f4e8ff"/>
     <text x="770" y="618" fill="#f4e8ff" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">LEARNING CORE</text>
     <text x="770" y="636" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">stam-ml · movie-rating-prediction-ml-pipeline</text>

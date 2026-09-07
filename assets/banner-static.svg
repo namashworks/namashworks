@@ -39,19 +39,19 @@
   <circle cx="1020" cy="105" r="240" fill="url(#b-glowA)" />
   <circle cx="770" cy="290" r="205" fill="url(#b-glowB)" />
   <rect width="1200" height="300" fill="url(#b-scan)" />
-  <g stroke="url(#b-edge)" stroke-width="1.15" fill="none" opacity="0.5" stroke-dasharray="100" stroke-dashoffset="100" pathLength="100" stroke-linecap="round">
-    <line x1="698" y1="148" x2="758" y2="92" stroke-dashoffset="0"></line>
-    <line x1="698" y1="148" x2="742" y2="220" stroke-dashoffset="0"></line>
-    <line x1="758" y1="92" x2="822" y2="166" stroke-dashoffset="0"></line>
-    <line x1="742" y1="220" x2="822" y2="166" stroke-dashoffset="0"></line>
-    <line x1="742" y1="220" x2="806" y2="248" stroke-dashoffset="0"></line>
-    <line x1="822" y1="166" x2="884" y2="108" stroke-dashoffset="0"></line>
-    <line x1="822" y1="166" x2="896" y2="212" stroke-dashoffset="0"></line>
-    <line x1="806" y1="248" x2="896" y2="212" stroke-dashoffset="0"></line>
-    <line x1="758" y1="92" x2="884" y2="108" stroke-dashoffset="0"></line>
-    <line x1="884" y1="108" x2="950" y2="150" stroke-dashoffset="0"></line>
-    <line x1="896" y1="212" x2="950" y2="150" stroke-dashoffset="0"></line>
-    <line x1="950" y1="150" x2="986" y2="138" opacity="0.6" stroke-dashoffset="0"></line>
+  <g stroke="url(#b-edge)" stroke-width="1.15" fill="none" opacity="0.5" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round">
+    <line pathLength="100" x1="698" y1="148" x2="758" y2="92" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="698" y1="148" x2="742" y2="220" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="758" y1="92" x2="822" y2="166" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="742" y1="220" x2="822" y2="166" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="742" y1="220" x2="806" y2="248" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="822" y1="166" x2="884" y2="108" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="822" y1="166" x2="896" y2="212" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="806" y1="248" x2="896" y2="212" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="758" y1="92" x2="884" y2="108" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="884" y1="108" x2="950" y2="150" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="896" y1="212" x2="950" y2="150" stroke-dashoffset="0"></line>
+    <line pathLength="100" x1="950" y1="150" x2="986" y2="138" opacity="0.6" stroke-dashoffset="0"></line>
   </g>
   <g fill="#cbd5e1">
     <circle cx="698" cy="148" r="2.6"></circle>
@@ -64,8 +64,8 @@
     <circle cx="950" cy="150" r="3.0"></circle>
   </g>
   <g stroke="#fbbf24" stroke-width="1" opacity="0.30" stroke-linecap="round">
-    <line x1="1046" y1="72" x2="1064" y2="244" />
-    <line x1="986" y1="136" x2="1122" y2="148" />
+    <line pathLength="100" x1="1046" y1="72" x2="1064" y2="244" />
+    <line pathLength="100" x1="986" y1="136" x2="1122" y2="148" />
   </g>
   <g fill="#fbbf24" filter="url(#b-soft)" opacity="0.55">
     <circle cx="1046" cy="72" r="5" />

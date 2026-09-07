@@ -1,4 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="A universe in every layer. A moon rises from behind a planet's limb through its phases while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="A universe in every layer. A moon rises through its phases from behind a planet's limb while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum.">
+  <!--
+    One 24 second cycle, repeating forever. It repeats on purpose: this panel sits
+    far down the page, so a reveal that played once at page load would always be
+    over before anyone scrolled to it.
+      0.5s  moon clears the limb and begins to wax
+      1.8s  rings light inner to outer, one every half second
+      5.9s  full moon, seven rings lit
+      6.4s  nine seals lock and dawn breaks
+      7.6s  holds until 22.5s, then fades and begins again
+  -->
   <defs>
     <radialGradient id="cc-sky" cx="34%" cy="78%" r="95%">
       <stop offset="0%" stop-color="#1b0f3a" />
@@ -34,13 +44,9 @@
     <filter id="cc-glow" x="-120%" y="-120%" width="340%" height="340%">
       <feGaussianBlur stdDeviation="7" />
     </filter>
-    <filter id="cc-soft" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="2.4" />
-    </filter>
     <clipPath id="cc-above" clipPathUnits="userSpaceOnUse">
       <path clip-rule="evenodd" d="M0,0 H1200 V700 H0 Z M2450,2400 a1850,1850 0 1,0 -3700,0 a1850,1850 0 1,0 3700,0" />
     </clipPath>
-    <!-- the terminator: a shadow sliding clear of the disc, new moon to full -->
     <mask id="cc-phase">
       <circle cx="400" cy="520" r="46" fill="#ffffff" />
       <circle cy="520" r="50" fill="#000000" cx="534"></circle>
@@ -49,21 +55,27 @@
   </defs>
   <rect width="1200" height="700" fill="url(#cc-sky)" />
   <g fill="#cbbdf0">
-    <circle cx="88" cy="96" r="1.3" opacity="0.7"></circle>
-    <circle cx="163" cy="212" r="1" opacity="0.5"></circle>
-    <circle cx="246" cy="74" r="1.5" opacity="0.8"></circle>
+    <circle cx="88" cy="96" r="1.3" opacity="0.25"></circle>
+    <circle cx="163" cy="212" r="1" opacity="0.2"></circle>
+    <circle cx="246" cy="74" r="1.5" opacity="0.3"></circle>
     <circle cx="318" cy="168" r="0.9" opacity="0.45" />
-    <circle cx="452" cy="62" r="1.2" opacity="0.65"></circle>
+    <circle cx="452" cy="62" r="1.2" opacity="0.25"></circle>
     <circle cx="536" cy="140" r="1" opacity="0.5" />
-    <circle cx="604" cy="252" r="1.4" opacity="0.75"></circle>
-    <circle cx="676" cy="88" r="1.1" opacity="0.55" />
-    <circle cx="720" cy="330" r="1.3" opacity="0.6"></circle>
-    <circle cx="120" cy="330" r="1.1" opacity="0.5"></circle>
+    <circle cx="604" cy="252" r="1.4" opacity="0.3"></circle>
+    <circle cx="620" cy="88" r="1.1" opacity="0.55" />
+    <circle cx="720" cy="330" r="1.3" opacity="0.2"></circle>
+    <circle cx="120" cy="330" r="1.1" opacity="0.2"></circle>
     <circle cx="58" cy="452" r="1" opacity="0.45" />
     <circle cx="196" cy="470" r="0.9" opacity="0.4" />
     <circle cx="372" cy="118" r="0.9" opacity="0.45" />
-    <circle cx="640" cy="186" r="0.9" opacity="0.4" />
-    <circle cx="284" cy="292" r="1" opacity="0.5"></circle>
+    <circle cx="284" cy="292" r="1" opacity="0.2"></circle>
+  </g>
+  <!-- the distant Otsutsuki moon, always in the sky -->
+  <g opacity="0.9">
+    <circle cx="672" cy="146" r="30" fill="none" stroke="#8049e2" stroke-width="1" opacity="0.35" />
+    <circle cx="672" cy="146" r="19" fill="#1a0f38" />
+    <path d="M672,127 a19,19 0 1,0 0.01,0 Z M672,127 a19,19 0 0,1 0,38 a13,15 0 0,1 0,-38 Z" fill="#e8d4ff" opacity="0.92" />
+    <circle cx="672" cy="146" r="19" fill="none" stroke="#f4e8ff" stroke-width="0.7" opacity="0.5" />
   </g>
   <g clip-path="url(#cc-above)">
     <!-- the moon, rising and waxing -->
@@ -77,42 +89,44 @@
           <ellipse cx="392" cy="540" rx="6" ry="5" />
           <ellipse cx="416" cy="503" rx="5" ry="4" />
         </g>
-        <!-- the moon turns as the seal takes it -->
         <circle cx="400" cy="520" r="46" fill="#d4744f" opacity="0.62"></circle>
         <circle cx="400" cy="520" r="46" fill="url(#cc-moon)" opacity="0.18"></circle>
       </g>
       <circle cx="400" cy="520" r="46" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.35" />
     </g>
-    <!-- seven layers, lighting inner to outer -->
-    <g fill="none" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke-linecap="round">
-      <circle cx="400" cy="520" r="55" stroke="#f4e8ff" stroke-width="2.6" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="100" stroke="#ddc4ff" stroke-width="2.4" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="145" stroke="#c6a2fb" stroke-width="2.2" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="190" stroke="#ae82f5" stroke-width="2.1" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="235" stroke="#9764ee" stroke-width="2" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="280" stroke="#8049e2" stroke-width="1.9" stroke-dashoffset="0"></circle>
-      <circle cx="400" cy="520" r="325" stroke="#6a34cf" stroke-width="1.8" stroke-dashoffset="0"></circle>
+    <!-- seven layers. pathLength must sit on each circle: it is NOT inherited from a <g> -->
+    <g fill="none" stroke-linecap="round">
+      <circle cx="400" cy="520" r="55" stroke="#f4e8ff" stroke-width="2.6" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="100" stroke="#ddc4ff" stroke-width="2.4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="145" stroke="#c6a2fb" stroke-width="2.2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="190" stroke="#ae82f5" stroke-width="2.1" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="235" stroke="#9764ee" stroke-width="2" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="280" stroke="#8049e2" stroke-width="1.9" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="325" stroke="#6a34cf" stroke-width="1.8" pathLength="100" stroke-dasharray="100" stroke-dashoffset="0"></circle>
     </g>
-    <g fill="none" pathLength="100" stroke-dasharray="4 96" stroke-linecap="round" opacity="0.95">
-      <circle cx="400" cy="520" r="100" stroke="#ffffff" stroke-width="2.6"></circle>
-      <circle cx="400" cy="520" r="190" stroke="#ffffff" stroke-width="2.4"></circle>
-      <circle cx="400" cy="520" r="325" stroke="#e8d4ff" stroke-width="2.2"></circle>
+    <!-- a charge running each lit ring -->
+    <g fill="none" stroke-linecap="round" opacity="0.95">
+      <circle cx="400" cy="520" r="100" stroke="#ffffff" stroke-width="2.6" pathLength="100" stroke-dasharray="4 96" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="190" stroke="#ffffff" stroke-width="2.4" pathLength="100" stroke-dasharray="4 96" stroke-dashoffset="0"></circle>
+      <circle cx="400" cy="520" r="325" stroke="#e8d4ff" stroke-width="2.2" pathLength="100" stroke-dasharray="4 96" stroke-dashoffset="0"></circle>
     </g>
     <!-- electron shells: the same drawing read as an atom -->
-    <g fill="none" stroke="#a36bf3" stroke-width="1.1" opacity="0.34">
-      <ellipse cx="400" cy="520" rx="300" ry="104" />
-      <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(60 400 520)" />
-      <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(120 400 520)" />
+    <g opacity="1">
+      <g fill="none" stroke="#a36bf3" stroke-width="1.1" opacity="0.34">
+        <ellipse cx="400" cy="520" rx="300" ry="104" />
+        <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(60 400 520)" />
+        <ellipse cx="400" cy="520" rx="300" ry="104" transform="rotate(120 400 520)" />
+      </g>
+      <g fill="#f4e8ff"></g>
     </g>
-    <g fill="#f4e8ff"></g>
     <!-- nine seals lock on at full moon: three inner, six outer -->
     <g opacity="0.85">
-      <g fill="#2e1338">
+      <g fill="#2e1338" transform="rotate(360 400 520)">
         <use href="#cc-tomoe" transform="translate(400,375)" />
         <use href="#cc-tomoe" transform="translate(525.6,447.5) rotate(60)" />
         <use href="#cc-tomoe" transform="translate(274.4,447.5) rotate(-60)" />
       </g>
-      <g fill="#3a1a44">
+      <g fill="#3a1a44" transform="rotate(0 400 520)">
         <use href="#cc-tomoe" transform="translate(400,240) scale(0.85)" />
         <use href="#cc-tomoe" transform="translate(642.5,380) rotate(60) scale(0.85)" />
         <use href="#cc-tomoe" transform="translate(642.5,660) rotate(120) scale(0.85)" />
@@ -122,9 +136,7 @@
       </g>
     </g>
     <!-- the light breaks: dawn, which is what Akatsuki means -->
-    <circle cx="400" cy="520" r="980" fill="none" stroke="#ffa06b" stroke-width="0" opacity="0"></circle>
-    <circle cx="400" cy="520" r="700" fill="none" stroke="#ffe3d2" stroke-width="0" opacity="0"></circle>
-    <!-- and holds: a crimson bleed that falls off before the legend -->
+    <circle cx="400" cy="520" r="980" fill="none" stroke="#ffa06b" stroke-width="0" opacity="1"></circle>
     <rect x="-60" y="0" width="920" height="700" fill="url(#cc-bleed)" opacity="0.34"></rect>
   </g>
   <!-- the planet -->
@@ -134,10 +146,10 @@
   <path d="M-250,700 A1850,1850 0 0 1 1450,700" fill="none" stroke="#ff9366" stroke-width="5" opacity="0.24"></path>
   <!-- dawn clouds. Akatsuki means dawn -->
   <g fill="#1c0f3c" stroke="#8049e2" stroke-width="1" opacity="0.5">
-    <g transform="translate(96,604) scale(0.9)">
+    <g transform="translate(96,604)">
       <path d="M0,22 C0,9 12,1 25,6 C31,-6 51,-6 58,6 C71,1 83,9 83,22 C83,33 70,40 58,35 C51,45 31,45 25,35 C12,40 0,33 0,22 Z" />
     </g>
-    <g transform="translate(560,640) scale(0.7)">
+    <g transform="translate(560,640)">
       <path d="M0,22 C0,9 12,1 25,6 C31,-6 51,-6 58,6 C71,1 83,9 83,22 C83,33 70,40 58,35 C51,45 31,45 25,35 C12,40 0,33 0,22 Z" />
     </g>
   </g>
