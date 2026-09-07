@@ -216,15 +216,18 @@ splitting every time an error happens to be large.
 Sixteen repositories, and they are not a random pile. Seven rings, lighting from the centre outward:
 the algorithm I wrote myself burning at the core, quantum tooling out at the frontier.
 
-The drawing is built to hold three readings at once. It is a **sunrise** breaking over a planet's
-limb, an **atom** with its electron shells, and a **ringed seal**. One set of rings, three ways of
-seeing it, which is about how the work feels from the inside. It is a map of where things sit, not a
+Watch it once. A moon rises through its phases while the rings light one by one, and when the moon
+comes full, nine seals lock onto the rings and the light breaks. The drawing holds three readings at
+the same time: a **moonrise** over a planet's limb, an **atom** with its electron shells, and a
+**ringed eye**. One set of rings, three ways of seeing it.
+
+The homage is to *Akatsuki*, which simply means **dawn**. It is a map of where things sit, not a
 claim that these sixteen run as one deployed system.
 
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stack-static.svg" />
-  <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings rise from behind a planet's limb, reading at once as a sunrise, an atom with electron shells, and a ringed seal. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
+  <img src="assets/stack.svg" alt="A universe in every layer. A moon rises through its phases from behind a planet's limb while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
 </picture>
 </div>
 
