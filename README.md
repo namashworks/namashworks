@@ -318,6 +318,26 @@ claims about what people from those places are like.**
 | <img src="assets/flag-ca.svg" width="22" alt=""> **Canada** | Canada has a National Standard on plain language, CAN-ASC-3.1:2025. Write so the next reader does not need you in the room. | If a doc needs me there to explain it, the doc is not finished |
 | <img src="assets/flag-au.svg" width="22" alt=""> **Australia** | *Fair dinkum*: genuine, honest, no varnish. | If it does not work yet, the README says so |
 
+<details>
+<summary><b>Where each of these comes from, so you can check me</b></summary>
+
+<br>
+
+A page that argues for evidence should carry its own. Every claim above was checked against a primary
+source, and the awkward details are kept rather than smoothed over.
+
+- **Japan** · Toyota's own wording is *"Go and see for yourself: the best practice is to go and see the location or process where the problem exists in order to solve that problem more quickly and efficiently."* Worth noting: Toyota lists it as a supporting practice under the principle *Observe thoroughly*, not as a standalone pillar. [Toyota Europe, The Toyota Way](https://www.toyota-europe.com/world-of-toyota/this-is-toyota/the-toyota-way)
+- **Korea** · The debate is real and Korean-led, not something imported. [Korea Herald, *Koreans do things quickly. Is it efficiency or lack of patience?*](https://www.koreaherald.com/view.php?ud=20240911050866)
+- **Germany** · Duden gives *Gründlichkeit* as **"das Gründlichsein; Gewissenhaftigkeit, Sorgfalt"**, thoroughness, conscientiousness, care. [Duden](https://www.duden.de/rechtschreibung/Gruendlichkeit)
+- **France** · *L'Art poétique*, Chant I, 1674: *"Ce que l'on conçoit bien s'énonce clairement, / Et les mots pour le dire arrivent aisément."* The widely repeated *"Ce qui se conçoit bien"* is a misquote. Boileau was himself reworking Horace. [Wikisource](https://fr.wikisource.org/wiki/Boileau_-_%C5%92uvres_po%C3%A9tiques/L%E2%80%99Art_po%C3%A9tique/Chant_I)
+- **Israel** · *Rosh gadol* and *rosh katan* come out of IDF culture and carried into Israeli working life. [Nathan Zeldes, *Rosh Gadol: how you can manage for initiative*](https://www.nathanzeldes.com/blog/2013/03/rosh-gadol-how-you-can-manage-for-initiative-and-get-away-with-it/)
+- **China** · 实事求是 first appears in the biography of Prince Xian of Hejian in the **Book of Han**, compiled by Ban Gu (32 to 92 CE), describing scholarship that verifies claims against evidence. It later acquired a distinct political register when Mao used it at Yan'an in 1938. I am using the older, scholarly sense. [Seek truth from facts](https://en.wikipedia.org/wiki/Seek_truth_from_facts)
+- **Taiwan** · TSMC's own engineering page describes *"remarkable results in yield improvement and quality control"* and *"process stability"*. This is an industrial practice, not a saying. [TSMC, Engineering Performance Optimization](https://www.tsmc.com/english/dedicatedFoundry/manufacturing/engineering)
+- **Canada** · **CAN-ASC-3.1:2025 Plain Language**, a National Standard of Canada published in October 2025 by Accessibility Standards Canada. [Accessibility Standards Canada](https://accessible.canada.ca/creating-accessibility-standards/can-asc-31-plain-language)
+- **Australia** · *Dinkum* means *"reliable, genuine, honest, true"*. It came from British dialect where it meant work, or a fair share of the work, and the sense of fairness carried into the Australian meaning. [Australian National Dictionary Centre, ANU](https://history.cass.anu.edu.au/centres/andc/australian-words-d)
+
+</details>
+
 ## Outils · Toolbox
 
 <div align="center">
