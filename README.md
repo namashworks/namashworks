@@ -213,14 +213,18 @@ splitting every time an error happens to be large.
 
 ## 系統 · The whole stack
 
-Sixteen repositories, and they are not a random pile. The layers group the work by what it is for,
-from an algorithm of my own at the bottom to quantum tooling at the top. It is a map of where things
-sit, not a claim that these sixteen run as one deployed system.
+Sixteen repositories, and they are not a random pile. Seven rings, lighting from the centre outward:
+the algorithm I wrote myself burning at the core, quantum tooling out at the frontier.
+
+The drawing is built to hold three readings at once. It is a **sunrise** breaking over a planet's
+limb, an **atom** with its electron shells, and a **ringed seal**. One set of rings, three ways of
+seeing it, which is about how the work feels from the inside. It is a map of where things sit, not a
+claim that these sixteen run as one deployed system.
 
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stack-static.svg" />
-  <img src="assets/stack.svg" alt="Seven layers across sixteen repositories: a learning core at the bottom, then data, models, applied AI, agents, knowledge and quantum tooling at the top." width="100%" />
+  <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings rise from behind a planet's limb, reading at once as a sunrise, an atom with electron shells, and a ringed seal. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
 </picture>
 </div>
 
