@@ -337,7 +337,7 @@ group('17. the SMIL is valid, not silently discarded');
 // Three ways an animation dies with no error message at all. Each of these has
 // shipped at least once, and the only symptom was "nothing is happening".
 const svgFiles = readdirSync(join(root, 'assets')).filter((n) => n.endsWith('.svg'));
-let ktCount = 0; const ktBad = [], lenBad = [], onGroup = [];
+let ktCount = 0; const ktBad = [], lenBad = [], onGroup = [], splineBad = [];
 for (const f of svgFiles) {
   const s = read(`assets/${f}`);
   for (const m of s.matchAll(/keyTimes="([^"]*)"/g)) {
@@ -350,6 +350,18 @@ for (const f of svgFiles) {
     if (nv !== nk) lenBad.push(`${f} -> ${nv} values vs ${nk} keyTimes`);
   }
   if (/<g[^>]*\spathLength=/.test(s)) onGroup.push(f);
+  // calcMode="spline" needs exactly one keySplines entry per interval, so n values
+  // require n-1 splines. Get it wrong and SMIL discards the whole animation without
+  // a word, which is the same silent failure as a bad keyTimes list.
+  for (const m of s.matchAll(/<animate[A-Za-z]*\b[^>]*>/g)) {
+    const tag = m[0];
+    if (!/calcMode="spline"/.test(tag)) continue;
+    const vs = tag.match(/values="([^"]*)"/);
+    const ks = tag.match(/keySplines="([^"]*)"/);
+    if (!vs || !ks) { splineBad.push(`${f} -> spline with no values or no keySplines`); continue; }
+    const nv = vs[1].split(';').length, nk = ks[1].split(';').length;
+    if (nk !== nv - 1) splineBad.push(`${f} -> ${nv} values needs ${nv - 1} keySplines, has ${nk}`);
+  }
 }
 is(ktBad.length === 0, `all ${ktCount} keyTimes lists start at 0 and end at exactly 1`,
   ktBad.slice(0, 3).join('  |  '));
@@ -357,6 +369,8 @@ is(lenBad.length === 0, 'every values list has the same length as its keyTimes',
   lenBad.slice(0, 3).join('  |  '));
 is(onGroup.length === 0, 'pathLength never sits on a <g>, where it is not inherited and does nothing',
   onGroup.join(', '));
+is(splineBad.length === 0, 'every calcMode="spline" carries exactly one keySplines entry per interval',
+  splineBad.slice(0, 3).join('  |  '));
 
 group('18. the recruiter-facing additions are true and self-consistent');
 // The proof panel prints a number about this very suite. If that number is not

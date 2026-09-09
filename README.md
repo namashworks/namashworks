@@ -29,7 +29,7 @@ Western Australia · **Full work rights to September 2028** on a subclass 485 gr
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/proof-static.svg" />
-  <img src="assets/proof.svg" alt="This page is checked by a test suite that ships with it: 303 checks across 18 groups, 45 more run against the published page, and zero third party requests." width="100%" />
+  <img src="assets/proof.svg" alt="This page is checked by a test suite that ships with it: 304 checks across 18 groups, 45 more run against the published page, and zero third party requests." width="100%" />
 </picture>
 
 <sub>A page that argues for reliability should be held to it. <a href="tools/test.mjs">tools/test.mjs</a> ships in this repository
@@ -234,18 +234,23 @@ splitting every time an error happens to be large.
 Sixteen repositories, and they are not a random pile. Seven rings, lighting from the centre outward:
 the algorithm I wrote myself burning at the core, quantum tooling out at the frontier.
 
-Watch it once. A moon rises through its phases while the rings light one by one, and when the moon
-comes full, nine seals lock onto the rings and the light breaks. The drawing holds three readings at
-the same time: a **moonrise** over a planet's limb, an **atom** with its electron shells, and a
-**ringed eye**. One set of rings, three ways of seeing it.
+Watch it once, and give it the full twenty four seconds. The core ignites, the seven rings light
+outward, and a moon climbs the sky from new to full across ten of those seconds. At full moon
+everything stops for a beat. Then a **Rinne Sharingan** opens on it, a pupil inside three rippling
+rings carrying nine tomoe, red light breaks out of the moon, and the world goes crimson.
 
-The homage is to *Akatsuki*, which simply means **dawn**. It is a map of where things sit, not a
-claim that these sixteen run as one deployed system.
+That last part is 無限月読, *Infinite Tsukuyomi*, from the end of *Naruto Shippuden*: the moment the
+moon is turned into an eye and the sky changes colour. The drawing holds three readings at once: a
+**moonrise** over a planet's limb, an **atom** with its electron shells, and a **ringed eye**. One
+set of rings, three ways of seeing it.
+
+It is a map of where things sit, not a claim that these sixteen run as one deployed system. And if
+your system asks for reduced motion you get a still of the panel at its peak, not a blank frame.
 
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stack-static.svg" />
-  <img src="assets/stack.svg" alt="A universe in every layer. A moon rises through its phases from behind a planet's limb while seven concentric rings light from the centre outward. At full moon nine seals lock onto the rings and dawn light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
+  <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings light from a violet core outward while a moon in the sky waxes from new to full. At full moon a Rinne Sharingan opens on it, a pupil inside three ripple rings carrying nine tomoe, and red light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
 </picture>
 </div>
 
