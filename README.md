@@ -218,24 +218,27 @@ splitting every time an error happens to be large.
 Sixteen repositories, and they are not a random pile. Seven rings, lighting from the centre outward:
 the algorithm I wrote myself burning at the core, quantum tooling out at the frontier.
 
-Watch it once, and give it the full twenty four seconds. The core ignites, the seven rings light
-outward, and a moon climbs the sky from new to full across ten of those seconds. At full moon
-everything stops for a beat. Then a **Rinne Sharingan** opens on it, a pupil inside three rippling
-rings carrying nine tomoe, red light breaks out of the moon, and the world goes crimson.
+**The order is not deployment order, it is how much each ring assumes.** The **learning core** assumes
+least: STAM is mine, and it is the only thing here not sitting on top of somebody else's model.
+**Data and formats** comes next, because you cannot model what you cannot move, and converters are
+where the unglamorous correctness bugs live. **Models** is where architecture starts to matter.
+**Applied AI** is a model pointed at a domain where being wrong costs something, which is why the
+medical one is labelled experimental. **Agents** is a model allowed to call things, so the failure
+mode stops being a bad sentence and starts being a bad action. **Knowledge** is a model that has to
+be able to refuse. And **quantum** sits at the edge because the tooling there is the least settled,
+which is exactly why the first thing I built for it was a ledger rather than a model.
 
-That last part is 無限月読, *Infinite Tsukuyomi*, from the end of *Naruto Shippuden*: the moment the
-moon is turned into an eye and the sky changes colour. The drawing holds three readings at once: a
-**moonrise** over a planet's limb, an **atom** with its electron shells, and a **ringed eye**. One
-set of rings, three ways of seeing it.
+Read it inward and it is one question repeated: how much of this still works if the layer under it
+changes. That is the threat model at the top of this page, asked one level up.
 
-It is a map of where things sit, not a claim that these sixteen run as one deployed system. And if
-your system asks for reduced motion you get a still of the panel at its peak, not a blank frame.
+It is a map of where things sit, not a claim that these sixteen run as one deployed system.
 
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stack-static.svg" />
   <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings light from a violet core outward while a moon in the sky waxes from new to full. At full moon a Rinne Sharingan opens on it, a pupil inside three ripple rings carrying nine tomoe, and red light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
 </picture>
+<sub><b>Twenty four seconds, and it loops.</b> The core ignites, the rings light outward, and a moon waxes new to full. At full moon a <b>Rinne Sharingan</b> opens on it and the sky goes crimson: 無限月読, <i>Infinite Tsukuyomi</i>, from the end of <i>Naruto Shippuden</i>. The same drawing reads three ways: a moonrise over a planet's limb, an atom with its electron shells, and a ringed eye. Reduced motion gets a still of it at the peak, not a blank frame.</sub>
 </div>
 
 <details>
