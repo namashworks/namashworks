@@ -17,7 +17,25 @@ and the code where I handle each failure.
 
 **Looking for AI Engineer roles.** Also open to Data Science, Data Engineering and Data Analytics.
 
-[LinkedIn](https://au.linkedin.com/in/itechno) · [All repositories](https://github.com/namashworks?tab=repositories) · Western Australia
+Western Australia · **Full work rights to September 2028** on a subclass 485 graduate visa, so there is nothing to sponsor
+
+[LinkedIn](https://au.linkedin.com/in/itechno) · [namash.work@gmail.com](mailto:namash.work@gmail.com) · [All repositories](https://github.com/namashworks?tab=repositories)
+
+</div>
+
+---
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/proof-static.svg" />
+  <img src="assets/proof.svg" alt="This page is checked by a test suite that ships with it: 303 checks across 18 groups, 45 more run against the published page, and zero third party requests." width="100%" />
+</picture>
+
+<sub>A page that argues for reliability should be held to it. <a href="tools/test.mjs">tools/test.mjs</a> ships in this repository
+and checks this README on every change: encoding, the asset budget, a reduced-motion twin for every panel, the executed SQL, and
+the claims that were corrected after review. <a href="tools/check-live.mjs">tools/check-live.mjs</a> runs against the published
+page, because that is the only thing a visitor actually receives.</sub>
 
 </div>
 
@@ -299,13 +317,31 @@ A test does exactly that and fails if the picture, this table and the `.sql` fil
 
 </details>
 
-## Where I want this pointed
+## 進路 · Where I want this pointed
 
-**Already touched:** healthcare and medtech · computational biology · quantum tooling · agent infrastructure · learning systems
+Two lists, and the difference between them matters. The left one has repositories behind it. The right
+one does not yet, which is why it is drawn dashed.
 
-**Want to work on next:** robotics and autonomy · mining technology, the autonomous haulage and ore body side · space, telemetry and on board inference · and AI itself, the tooling layer rather than the demo layer
+<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/roadmap-static.svg" />
+  <img src="assets/roadmap.svg" alt="A trajectory panel. Already touched, drawn solid: healthcare and medtech, computational biology, quantum tooling, agent infrastructure, learning systems. Want to work on next, drawn dashed because nothing ships there yet: robotics and autonomy, mining technology, space telemetry and on board inference, and the AI tooling layer." width="100%" />
+</picture>
+<sub><b>Solid is work that exists. Dashed is work that does not.</b> I would rather be clear about which list a thing is on, because a roadmap that does not separate the two is just a wish printed in a serious font.</sub>
+</div>
 
-I would rather be clear about which list a thing is on. The second one is ambition, not a claim.
+<details>
+<summary><b>The same two lists as text</b></summary>
+
+<br>
+
+- **Already touched** · healthcare and medtech · computational biology · quantum tooling · agent infrastructure · learning systems
+- **Want to work on next** · robotics and autonomy · mining technology, the autonomous haulage and ore body side · space, telemetry and on board inference · and AI itself, the tooling layer rather than the demo layer
+
+The second list is ambition, not a claim. Nothing on it has a repository behind it yet, and this page
+would be worth less if it pretended otherwise.
+
+</details>
 
 ## Arbeitsweise · How I work
 
@@ -371,10 +407,14 @@ Everything here appears in a repository above. I have left off tools I have only
 
 ## Contact
 
-The fastest way to reach me is LinkedIn. The most interesting way is an issue on one of the
+The fastest way to reach me is email or LinkedIn. The most interesting way is an issue on one of the
 repositories above, because then the conversation starts with something concrete.
 
-**[Connect on LinkedIn](https://au.linkedin.com/in/itechno)**
+**[namash.work@gmail.com](mailto:namash.work@gmail.com)** · **[Connect on LinkedIn](https://au.linkedin.com/in/itechno)**
+
+For a recruiter, the short version: **AI Engineer roles, Western Australia, full work rights to
+September 2028 on a subclass 485 graduate visa.** Open to Data Science, Data Engineering and Data
+Analytics as well.
 
 <div align="center">
 
