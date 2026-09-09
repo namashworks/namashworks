@@ -28,22 +28,6 @@ Western Australia · **Full work rights to September 2028** on a subclass 485 gr
 <div align="center">
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/proof-static.svg" />
-  <img src="assets/proof.svg" alt="This page is checked by a test suite that ships with it: 304 checks across 18 groups, 45 more run against the published page, and zero third party requests." width="100%" />
-</picture>
-
-<sub>A page that argues for reliability should be held to it. <a href="tools/test.mjs">tools/test.mjs</a> ships in this repository
-and checks this README on every change: encoding, the asset budget, a reduced-motion twin for every panel, the executed SQL, and
-the claims that were corrected after review. <a href="tools/check-live.mjs">tools/check-live.mjs</a> runs against the published
-page, because that is the only thing a visitor actually receives.</sub>
-
-</div>
-
----
-
-<div align="center">
-
-<picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/city.jpg" />
   <img src="assets/city-defended.svg" alt="An anime night city under three shield domes. Monitor drones patrol the sky and three incoming threats are intercepted on the outer shield." width="100%" />
 </picture>
