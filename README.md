@@ -373,22 +373,21 @@ source, and the awkward details are kept rather than smoothed over.
 
 </details>
 
-## Outils · Toolbox
+## 世界 · Countries I am interested to work in
 
-Grouped by the job, not by logo. The right hand column is the part that matters: every tool here is
-load bearing in something above, and **I have left off tools I have only read about.**
+| Continent | Countries |
+| :-- | :-- |
+| **Asia** | <img src="assets/flag-jp.svg" width="22" alt=""> Japan · <img src="assets/flag-kr.svg" width="22" alt=""> South Korea · <img src="assets/flag-cn.svg" width="22" alt=""> China · <img src="assets/flag-tw.svg" width="22" alt=""> Taiwan · <img src="assets/flag-th.svg" width="22" alt=""> Thailand · <img src="assets/flag-il.svg" width="22" alt=""> Israel |
+| **Europe** | <img src="assets/flag-de.svg" width="22" alt=""> Germany · <img src="assets/flag-fr.svg" width="22" alt=""> France · <img src="assets/flag-ch.svg" width="22" alt=""> Switzerland · <img src="assets/flag-se.svg" width="22" alt=""> Sweden · <img src="assets/flag-fi.svg" width="22" alt=""> Finland · <img src="assets/flag-ee.svg" width="22" alt=""> Estonia |
+| **North America** | <img src="assets/flag-ca.svg" width="22" alt=""> Canada |
+| **Oceania** | <img src="assets/flag-au.svg" width="22" alt=""> Australia |
 
-| | What I use | Where it is load bearing |
-| :-- | :-- | :-- |
-| **Code and data** | Python · SQL · SQLite · JavaScript · pandas · NumPy | The query further up this page is executed against SQLite, not typed out. The fixture ships: [`examples/fixture.sql`](examples/fixture.sql) |
-| **Models** | PyTorch · Transformers · LoRA / PEFT · scikit-learn | [Genz-medical-advisor](https://github.com/namashworks/Genz-medical-advisor) is a LoRA fine tune of Qwen 2.5 3B. [FNet-Pytorch-Implementation](https://github.com/namashworks/FNet-Pytorch-Implementation) is what the name says |
-| **Agents** | Google ADK · OpenAI Agents SDK · Claude Agent SDK · A2A | [Bridge ADK](https://github.com/namashworks/Bridge-ADK) puts an agent from any of the three onto one A2A wire. That is why all three are here rather than a favourite |
-| **Quantum** | Qiskit · Cirq · PennyLane | [qledger](https://github.com/namashworks/qledger) stores the circuit, the seed, the backend and the noise profile, so a run stays comparable months later |
-| **Workflow** | Git · GitHub Actions · Jupyter · tests and reproducible examples | A licence, a `CITATION.cff` and a test folder before I call a repository public. The entropy rule runs standalone in [`examples/entropy.py`](examples/entropy.py) |
-
-That cuts both ways, and the absences are deliberate. There is no container, web framework or cloud
-row on that list, because there is none in the repositories above. A toolbox that lists what you
-wish you had used is just a wish with a logo next to it.
+<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/worldmap-static.svg" />
+  <img src="assets/worldmap.svg" alt="A world map marking fourteen countries. Asia: Japan, South Korea, China, Taiwan, Thailand and Israel. Europe: Germany, France, Switzerland, Sweden, Finland and Estonia. North America: Canada. Oceania: Australia." width="100%" />
+</picture>
+</div>
 
 ## Contact
 
