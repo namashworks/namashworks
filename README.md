@@ -385,7 +385,7 @@ source, and the awkward details are kept rather than smoothed over.
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/worldmap-static.svg" />
-  <img src="assets/worldmap.svg" alt="A world map marking fourteen countries. Asia: Japan, South Korea, China, Taiwan, Thailand and Israel. Europe: Germany, France, Switzerland, Sweden, Finland and Estonia. North America: Canada. Oceania: Australia." width="100%" />
+  <img src="assets/worldmap.svg" alt="A world map marking fourteen countries, with an inset of Australia. Asia: Japan, South Korea, China, Taiwan, Thailand and Israel. Europe: Germany, France, Switzerland, Sweden, Finland and Estonia. North America: Canada. Oceania: Australia. A green star marks Perth in Western Australia, where I am now, and the inset also shows Brisbane, Sydney, Canberra, Adelaide, Melbourne and Tasmania." width="100%" />
 </picture>
 </div>
 
