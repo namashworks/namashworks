@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img"
-     aria-label="A universe in every layer. Seven concentric rings light from a violet core outward, each ring labelled with its layer along its own arc and carrying one node per repository, sixteen in total. A moon in the sky waxes from new to full, and at full moon a Rinne Sharingan opens on it, a pupil inside three ripple rings carrying nine tomoe, and red light breaks across the sky. The seven layers are learning core, data, models, applied AI, agents, knowledge and quantum.">
+     aria-label="A universe in every layer. Seven concentric rings light from a violet core outward, each ring labelled with its layer along its own arc and carrying one node per repository, sixteen in total. A moon in the sky waxes from new to full, and at full moon a Rinne Sharingan opens on it and red light breaks across the sky. Then the rings themselves wake as a Rinnegan: a pupil opens at the core, ripples run outward, and the seven layers read at their clearest. The layers are learning core, data, models, applied AI, agents, knowledge and quantum.">
   <!--
     One 24 second cycle, repeating forever. It repeats on purpose: this panel sits
     far down the page, so a reveal that played once at page load would always be
@@ -14,7 +14,13 @@
                      the next beat lands at all.
       0.500 - 0.528  the Rinne Sharingan opens on the moon and the moon goes red
       0.528 - 0.560  the burst: white flash, two shockwaves, light down onto the world
-      0.560 - 0.940  held in the red. The tomoe turn, the beams breathe
+      0.560 - 0.620  held in the red. The shock. The stack is hard to read here, on purpose
+      0.620 - 0.670  THE AWAKENING. Seven concentric rings around a core already ARE a
+                     Rinnegan, so the genjutsu does not bury the architecture, it opens it.
+                     The red lifts off the rings, they sharpen to violet, a pupil opens at
+                     the core and ripples run outward. Red moon above, violet eye below,
+                     which is how the two doujutsu actually sit in the story.
+      0.670 - 0.940  held awake. This is the clearest the stack ever reads
       0.940 - 1.000  fades out and begins again
   -->
   <defs>
@@ -156,7 +162,7 @@
         <ellipse cx="412" cy="536" rx="11" ry="6" transform="rotate(18 412 536)"/>
       </g>
       <circle cx="400" cy="520" r="46" fill="url(#cc-coreRed)" opacity="0">
-        <animate attributeName="opacity" values="0;0;0.92;0.92;0;0" keyTimes="0;0.500;0.545;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;0.92;0.92;0.18;0.18;0;0" keyTimes="0;0.500;0.545;0.620;0.670;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
       </circle>
       <circle cx="400" cy="520" r="46" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.35"/>
     </g>
@@ -186,7 +192,8 @@
          point of the panel. The luminance ramp is deliberately wide, hot at the core
          and nearly black at the frontier, so the layers stay countable in the crimson. -->
     <g fill="none" stroke-linecap="round" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.55;0.55;0;0" keyTimes="0;0.528;0.560;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <!-- lifts off again at 0.62, when the rings wake up as a Rinnegan and go violet -->
+      <animate attributeName="opacity" values="0;0;0.55;0.55;0;0" keyTimes="0;0.528;0.560;0.620;0.670;1" dur="24s" repeatCount="indefinite"/>
       <circle cx="400" cy="520" r="55" stroke="#fff1e4" stroke-width="2.6"/>
       <circle cx="400" cy="520" r="100" stroke="#ffc9a6" stroke-width="2.4"/>
       <circle cx="400" cy="520" r="145" stroke="#ff9060" stroke-width="2.2"/>
@@ -194,6 +201,48 @@
       <circle cx="400" cy="520" r="235" stroke="#e5301f" stroke-width="2"/>
       <circle cx="400" cy="520" r="280" stroke="#b5121f" stroke-width="1.9"/>
       <circle cx="400" cy="520" r="325" stroke="#7a0a14" stroke-width="1.8"/>
+    </g>
+
+    <!-- ===================================================================
+         THE AWAKENING. The seven rings are already concentric circles round a
+         core, which is a Rinnegan, so this beat does not add a new shape. It
+         sharpens the one that has been on screen the whole time and lets the
+         reader finally see it. Brightest state in the cycle, and the point at
+         which the still twin is sampled.
+         =================================================================== -->
+    <g fill="none" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.620;0.670;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <circle cx="400" cy="520" r="55" stroke="#ffffff" stroke-width="3"/>
+      <circle cx="400" cy="520" r="100" stroke="#f2e7ff" stroke-width="2.9"/>
+      <circle cx="400" cy="520" r="145" stroke="#e0ccff" stroke-width="2.8"/>
+      <circle cx="400" cy="520" r="190" stroke="#cdb0fc" stroke-width="2.6"/>
+      <circle cx="400" cy="520" r="235" stroke="#b995f8" stroke-width="2.5"/>
+      <circle cx="400" cy="520" r="280" stroke="#a67cf4" stroke-width="2.4"/>
+      <circle cx="400" cy="520" r="325" stroke="#9264f0" stroke-width="2.3"/>
+    </g>
+
+    <!-- ripples running out of the pupil, the motion a Rinnegan is named for -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.640;0.690;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <g fill="none" stroke="#d9c2ff" stroke-width="2.2">
+        <circle cx="400" cy="520" r="46">
+          <animate attributeName="r" values="46;340" keyTimes="0;1" dur="3.2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0" keyTimes="0;1" dur="3.2s" repeatCount="indefinite"/></circle>
+        <circle cx="400" cy="520" r="46">
+          <animate attributeName="r" values="46;340" keyTimes="0;1" dur="3.2s" begin="1.07s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0" keyTimes="0;1" dur="3.2s" begin="1.07s" repeatCount="indefinite"/></circle>
+        <circle cx="400" cy="520" r="46">
+          <animate attributeName="r" values="46;340" keyTimes="0;1" dur="3.2s" begin="2.13s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.7;0" keyTimes="0;1" dur="3.2s" begin="2.13s" repeatCount="indefinite"/></circle>
+      </g>
+    </g>
+
+    <!-- the pupil. This is what turns a diagram of rings into an eye -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.620;0.665;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+      <circle cx="400" cy="520" r="14" fill="#170733"/>
+      <circle cx="400" cy="520" r="14" fill="none" stroke="#efe2ff" stroke-width="1.7"/>
+      <circle cx="400" cy="520" r="24" fill="none" stroke="#c6a2fb" stroke-width="1" opacity="0.72"/>
     </g>
 
     <!-- a charge running each lit ring -->
@@ -370,7 +419,7 @@
 
   <!-- light coming down off the moon onto the world -->
   <g transform="translate(620,162)" opacity="0">
-    <animate attributeName="opacity" values="0;0;0.7;0.28;0.28;0;0" keyTimes="0;0.528;0.552;0.60;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.7;0.28;0.16;0.16;0;0" keyTimes="0;0.528;0.552;0.60;0.67;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
     <g fill="url(#cc-beam)">
       <animateTransform attributeName="transform" type="rotate" values="-3;3;-3" dur="13s" repeatCount="indefinite"/>
       <use href="#cc-beamray" transform="rotate(100)"/>
@@ -383,7 +432,7 @@
 
   <!-- the world turns over -->
   <rect width="1200" height="700" fill="url(#cc-genjutsu)" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.66;0.66;0;0" keyTimes="0;0.528;0.556;0.61;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0.66;0.32;0.32;0;0" keyTimes="0;0.528;0.556;0.61;0.67;0.94;0.96;1" dur="24s" repeatCount="indefinite"/>
   </rect>
 
   <text x="74" y="104" fill="#ff7a56" opacity="0" font-size="25" letter-spacing="1"
