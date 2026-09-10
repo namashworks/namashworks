@@ -375,27 +375,20 @@ source, and the awkward details are kept rather than smoothed over.
 
 ## Outils · Toolbox
 
-<div align="center">
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/toolbox-static.svg" />
-  <img src="assets/toolbox.svg" alt="Toolbox by role. Code and data: Python, SQL, SQLite, JavaScript, pandas, NumPy. Models: PyTorch, Transformers, LoRA and PEFT, scikit-learn. Agents: Google ADK, OpenAI Agents SDK, Claude Agent SDK, A2A. Quantum: Qiskit, Cirq, PennyLane. Workflow: Git, GitHub Actions, Jupyter, tests and reproducible examples." width="100%" />
-</picture>
-</div>
+Grouped by the job, not by logo. The right hand column is the part that matters: every tool here is
+load bearing in something above, and **I have left off tools I have only read about.**
 
-<details>
-<summary><b>The same list as text</b></summary>
+| | What I use | Where it is load bearing |
+| :-- | :-- | :-- |
+| **Code and data** | Python · SQL · SQLite · JavaScript · pandas · NumPy | The query further up this page is executed against SQLite, not typed out. The fixture ships: [`examples/fixture.sql`](examples/fixture.sql) |
+| **Models** | PyTorch · Transformers · LoRA / PEFT · scikit-learn | [Genz-medical-advisor](https://github.com/namashworks/Genz-medical-advisor) is a LoRA fine tune of Qwen 2.5 3B. [FNet-Pytorch-Implementation](https://github.com/namashworks/FNet-Pytorch-Implementation) is what the name says |
+| **Agents** | Google ADK · OpenAI Agents SDK · Claude Agent SDK · A2A | [Bridge ADK](https://github.com/namashworks/Bridge-ADK) puts an agent from any of the three onto one A2A wire. That is why all three are here rather than a favourite |
+| **Quantum** | Qiskit · Cirq · PennyLane | [qledger](https://github.com/namashworks/qledger) stores the circuit, the seed, the backend and the noise profile, so a run stays comparable months later |
+| **Workflow** | Git · GitHub Actions · Jupyter · tests and reproducible examples | A licence, a `CITATION.cff` and a test folder before I call a repository public. The entropy rule runs standalone in [`examples/entropy.py`](examples/entropy.py) |
 
-<br>
-
-- **Code and data** · Python · SQL · SQLite · JavaScript · pandas · NumPy
-- **Models** · PyTorch · Transformers · LoRA / PEFT · scikit-learn
-- **Agents** · Google ADK · OpenAI Agents SDK · Claude Agent SDK · A2A
-- **Quantum** · Qiskit · Cirq · PennyLane
-- **Workflow** · Git · GitHub Actions · Jupyter · tests and reproducible examples
-
-Everything here appears in a repository above. I have left off tools I have only read about.
-
-</details>
+That cuts both ways, and the absences are deliberate. There is no container, web framework or cloud
+row on that list, because there is none in the repositories above. A toolbox that lists what you
+wish you had used is just a wish with a logo next to it.
 
 ## Contact
 
