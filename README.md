@@ -236,9 +236,9 @@ It is a map of where things sit, not a claim that these sixteen run as one deplo
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/stack-static.svg" />
-  <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings light from a violet core outward while a moon in the sky waxes from new to full. At full moon a Rinne Sharingan opens on it, a pupil inside three ripple rings carrying nine tomoe, and red light breaks across the sky. The rings are seven layers of work across sixteen repositories: learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
+  <img src="assets/stack.svg" alt="A universe in every layer. Seven concentric rings light from a violet core outward, each ring labelled with its layer along its own arc and carrying one node per repository, sixteen in total. A moon in the sky waxes from new to full, and at full moon a Rinne Sharingan opens on it, a pupil inside three ripple rings carrying nine tomoe, and red light breaks across the sky. The seven layers are learning core, data, models, applied AI, agents, knowledge and quantum." width="100%" />
 </picture>
-<sub><b>Twenty four seconds, and it loops.</b> The core ignites, the rings light outward, and a moon waxes new to full. At full moon a <b>Rinne Sharingan</b> opens on it and the sky goes crimson: 無限月読, <i>Infinite Tsukuyomi</i>, from the end of <i>Naruto Shippuden</i>. The same drawing reads three ways: a moonrise over a planet's limb, an atom with its electron shells, and a ringed eye. Reduced motion gets a still of it at the peak, not a blank frame.</sub>
+<sub><b>Twenty four seconds, and it loops.</b> Every ring is named on itself and carries one node per repository, sixteen across the seven. The core ignites, the rings light outward, and a moon waxes new to full. At full moon a <b>Rinne Sharingan</b> opens on it and the sky goes crimson: 無限月読, <i>Infinite Tsukuyomi</i>, from the end of <i>Naruto Shippuden</i>. The same drawing reads three ways: a moonrise over a planet's limb, an atom with its electron shells, and a ringed eye. Reduced motion gets a still of it at the peak, not a blank frame.</sub>
 </div>
 
 <details>
