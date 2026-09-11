@@ -258,10 +258,11 @@ All sixteen are my own work. [Forks and learning explorations](https://github.co
 
 </details>
 
-## 查询 · Before there is a model, there is a table
+## 数据 · Before there is a model, there is data
 
-Observability is not a dashboard, it is being able to ask a straight question afterwards and get an
-answer you can defend. This is the shape of that question.
+Most of the work behind any model is data work: getting it in, keeping it honest, and being able to
+ask it a straight question afterwards and get an answer you can defend. This is the shape of that
+question.
 
 <div align="center">
 <picture>
