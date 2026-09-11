@@ -393,14 +393,15 @@ source, and the awkward details are kept rather than smoothed over.
 
 ## Contact
 
-The fastest way to reach me is email or LinkedIn. The most interesting way is an issue on one of the
-repositories above, because then the conversation starts with something concrete.
+**I solve real problems with AI and data, and I build the part that keeps working after the demo.**
+If you are hiring for something that has to be right every time, let's talk.
+
+**Western Australia, on a 485 work visa, and happy to relocate with sponsorship for the right role.**
 
 **[namash.work@gmail.com](mailto:namash.work@gmail.com)** · **[Connect on LinkedIn](https://au.linkedin.com/in/itechno)**
 
-For a recruiter, the short version: **AI Engineer roles, Western Australia, full work rights to
-September 2028 on a subclass 485 graduate visa.** Open to Data Science, Data Engineering and Data
-Analytics as well.
+The most interesting way to start is an issue on one of the repositories above, because then the
+conversation begins with something concrete.
 
 <div align="center">
 
