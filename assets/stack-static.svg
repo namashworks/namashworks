@@ -219,58 +219,58 @@
          Labels and nodes appear as their ring finishes drawing, so the naming
          follows the light outward rather than arriving all at once.
          =================================================================== -->
-    <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="12" letter-spacing="2.6">
+    <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="14" letter-spacing="2.4">
       <g opacity="1">
         <text fill="#8f5ae8">
-          <textPath href="#cc-arc325" startOffset="34%">QUANTUM</textPath>
+          <textPath href="#cc-arc325" startOffset="33%">QUANTUM</textPath>
         </text>
-        <circle cx="629.8" cy="290.2" r="3.6" fill="#6a34cf" stroke="#c6a2fb" stroke-width="1.1" />
+        <circle cx="629.8" cy="290.2" r="4.2" fill="#6a34cf" stroke="#c6a2fb" stroke-width="1.1" />
       </g>
       <g opacity="1">
         <text fill="#9a68ea">
-          <textPath href="#cc-arc280" startOffset="36%">KNOWLEDGE</textPath>
+          <textPath href="#cc-arc280" startOffset="34%">KNOWLEDGE</textPath>
         </text>
-        <circle cx="486.5" cy="253.7" r="3.6" fill="#8049e2" stroke="#c6a2fb" stroke-width="1.1" />
-        <circle cx="666.3" cy="433.5" r="3.6" fill="#8049e2" stroke="#c6a2fb" stroke-width="1.1" />
+        <circle cx="486.5" cy="253.7" r="4.2" fill="#8049e2" stroke="#c6a2fb" stroke-width="1.1" />
+        <circle cx="666.3" cy="433.5" r="4.2" fill="#8049e2" stroke="#c6a2fb" stroke-width="1.1" />
       </g>
       <g opacity="1">
         <text fill="#a97ff1">
-          <textPath href="#cc-arc235" startOffset="38%">AGENTS</textPath>
+          <textPath href="#cc-arc235" startOffset="36%">AGENTS</textPath>
         </text>
-        <circle cx="472.6" cy="296.5" r="3.6" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
-        <circle cx="566.2" cy="353.8" r="3.6" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
-        <circle cx="623.5" cy="447.4" r="3.6" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="472.6" cy="296.5" r="4.2" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="566.2" cy="353.8" r="4.2" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="623.5" cy="447.4" r="4.2" fill="#9764ee" stroke="#ddc4ff" stroke-width="1.1" />
       </g>
       <g opacity="1">
         <text fill="#bb96f6">
-          <textPath href="#cc-arc190" startOffset="40%">APPLIED AI</textPath>
+          <textPath href="#cc-arc190" startOffset="37%">APPLIED AI</textPath>
         </text>
-        <circle cx="458.7" cy="339.3" r="3.6" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
-        <circle cx="534.4" cy="385.6" r="3.6" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
-        <circle cx="580.7" cy="461.3" r="3.6" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="458.7" cy="339.3" r="4.2" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="534.4" cy="385.6" r="4.2" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
+        <circle cx="580.7" cy="461.3" r="4.2" fill="#ae82f5" stroke="#ddc4ff" stroke-width="1.1" />
       </g>
       <g opacity="1">
         <text fill="#cdaefc">
-          <textPath href="#cc-arc145" startOffset="42%">MODELS</textPath>
+          <textPath href="#cc-arc145" startOffset="39%">MODELS</textPath>
         </text>
-        <circle cx="444.8" cy="382.1" r="3.6" fill="#c6a2fb" stroke="#f4e8ff" stroke-width="1.1" />
-        <circle cx="537.9" cy="475.2" r="3.6" fill="#c6a2fb" stroke="#f4e8ff" stroke-width="1.1" />
+        <circle cx="444.8" cy="382.1" r="4.2" fill="#c6a2fb" stroke="#f4e8ff" stroke-width="1.1" />
+        <circle cx="537.9" cy="475.2" r="4.2" fill="#c6a2fb" stroke="#f4e8ff" stroke-width="1.1" />
       </g>
       <g opacity="1">
         <text fill="#e2cdff">
-          <textPath href="#cc-arc100" startOffset="44%">DATA</textPath>
+          <textPath href="#cc-arc100" startOffset="41%">DATA</textPath>
         </text>
-        <circle cx="430.9" cy="424.9" r="3.6" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
-        <circle cx="470.7" cy="449.3" r="3.6" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
-        <circle cx="495.1" cy="489.1" r="3.6" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
+        <circle cx="430.9" cy="424.9" r="4.2" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
+        <circle cx="470.7" cy="449.3" r="4.2" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
+        <circle cx="495.1" cy="489.1" r="4.2" fill="#ddc4ff" stroke="#ffffff" stroke-width="1.1" />
       </g>
       <!-- The core is a sphere, not a ring, so it gets the right hand column's own
            swatch-and-label treatment instead of text bent round an arc. -->
       <g opacity="1">
-        <rect x="186" y="540" width="8" height="8" fill="#f4e8ff" />
-        <text x="202" y="548" fill="#f4e8ff" font-size="11.5" letter-spacing="2.2">LEARNING CORE</text>
-        <circle cx="417.0" cy="467.7" r="3.6" fill="#f4e8ff" stroke="#ffffff" stroke-width="1.1" />
-        <circle cx="452.3" cy="503.0" r="3.6" fill="#f4e8ff" stroke="#ffffff" stroke-width="1.1" />
+        <rect x="184" y="539" width="10" height="10" fill="#f4e8ff" />
+        <text x="202" y="549" fill="#f4e8ff" font-size="13.5" letter-spacing="2.2">LEARNING CORE</text>
+        <circle cx="417.0" cy="467.7" r="4.2" fill="#f4e8ff" stroke="#ffffff" stroke-width="1.1" />
+        <circle cx="452.3" cy="503.0" r="4.2" fill="#f4e8ff" stroke="#ffffff" stroke-width="1.1" />
       </g>
     </g>
   </g>
@@ -288,49 +288,49 @@
     </g>
   </g>
   <rect width="1200" height="700" fill="url(#cc-vig)" />
-  <text x="60" y="668" fill="#6f5f96" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">7 LAYERS · 16 REPOSITORIES · ALL MINE, NO FORKS · BUILT OUTWARD FROM THE CORE</text>
+  <text x="60" y="668" fill="#8a7ab0" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">7 LAYERS · 16 REPOSITORIES · ALL MINE, NO FORKS · BUILT OUTWARD FROM THE CORE</text>
   <text x="748" y="62" fill="#c6a2fb" opacity="0.9" font-size="11" letter-spacing="3.2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SYSTEM MAP · NAMASHWORKS</text>
-  <text x="748" y="104" fill="#f4e8ff" font-size="27" font-weight="600" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">A universe in every layer.</text>
-  <text x="748" y="132" fill="#9a8bb8" font-size="13" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Foundations at the centre. Frontiers at the edge.</text>
+  <text x="748" y="104" fill="#f4e8ff" font-size="21" font-weight="600" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Seven layers, sixteen repositories.</text>
+  <text x="748" y="132" fill="#b3a6cf" font-size="13.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Foundations at the centre. Frontiers at the edge.</text>
   <line x1="748" y1="152" x2="1160" y2="152" stroke="#2a1a52" stroke-width="1.2" />
   <g opacity="1">
-    <rect x="748" y="182" width="10" height="10" fill="#6a34cf" />
-    <text x="770" y="192" fill="#8f6ae0" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">QUANTUM</text>
-    <text x="770" y="210" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">qledger</text>
+    <rect x="748" y="179" width="11" height="11" fill="#6a34cf" />
+    <text x="770" y="190" fill="#9d7cf0" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">QUANTUM</text>
+    <text x="770" y="211" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">qledger</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="250" width="10" height="10" fill="#8049e2" />
-    <text x="770" y="260" fill="#8049e2" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">KNOWLEDGE</text>
-    <text x="770" y="278" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">egkg-architecture · StudyMate</text>
+    <rect x="748" y="243" width="11" height="11" fill="#8049e2" />
+    <text x="770" y="254" fill="#9268ee" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">KNOWLEDGE</text>
+    <text x="770" y="275" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">egkg-architecture · StudyMate</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="318" width="10" height="10" fill="#9764ee" />
-    <text x="770" y="328" fill="#9764ee" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">AGENTS</text>
-    <text x="770" y="346" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Bridge-ADK · IPipe · Chatform</text>
+    <rect x="748" y="307" width="11" height="11" fill="#9764ee" />
+    <text x="770" y="318" fill="#9764ee" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">AGENTS</text>
+    <text x="770" y="339" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Bridge-ADK · IPipe · Chatform</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="386" width="10" height="10" fill="#ae82f5" />
-    <text x="770" y="396" fill="#ae82f5" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">APPLIED AI</text>
-    <text x="770" y="414" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genz-medical-advisor · Successapp · autoRECON</text>
+    <rect x="748" y="371" width="11" height="11" fill="#ae82f5" />
+    <text x="770" y="382" fill="#ae82f5" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">APPLIED AI</text>
+    <text x="770" y="403" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genz-medical-advisor · Successapp · autoRECON</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="454" width="10" height="10" fill="#c6a2fb" />
-    <text x="770" y="464" fill="#c6a2fb" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">MODELS</text>
-    <text x="770" y="482" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genetic-Transformer · FNet-Pytorch-Implementation</text>
+    <rect x="748" y="435" width="11" height="11" fill="#c6a2fb" />
+    <text x="770" y="446" fill="#c6a2fb" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">MODELS</text>
+    <text x="770" y="467" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Genetic-Transformer · FNet-Pytorch-Implementation</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="522" width="10" height="10" fill="#ddc4ff" />
-    <text x="770" y="532" fill="#ddc4ff" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">DATA</text>
-    <text x="770" y="550" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Json-to-Toon-converter · multiformat-toon</text>
-    <text x="770" y="566" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Synthetic-Data-Generator-with-converter</text>
+    <rect x="748" y="499" width="11" height="11" fill="#ddc4ff" />
+    <text x="770" y="510" fill="#ddc4ff" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">DATA</text>
+    <text x="770" y="531" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Json-to-Toon-converter · multiformat-toon</text>
+    <text x="770" y="550" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Synthetic-Data-Generator-with-converter</text>
   </g>
   <g opacity="1">
-    <rect x="748" y="608" width="10" height="10" fill="#f4e8ff" />
-    <text x="770" y="618" fill="#f4e8ff" font-size="12.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">LEARNING CORE</text>
-    <text x="770" y="636" fill="#9a8bb8" font-size="11.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">stam-ml · movie-rating-prediction-ml-pipeline</text>
+    <rect x="748" y="582" width="11" height="11" fill="#f4e8ff" />
+    <text x="770" y="593" fill="#f4e8ff" font-size="16" letter-spacing="2" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">LEARNING CORE</text>
+    <text x="770" y="614" fill="#ffffff" font-size="14.5" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">stam-ml · movie-rating-prediction-ml-pipeline</text>
   </g>
-  <line x1="748" y1="590" x2="1160" y2="590" stroke="#2a1a52" stroke-width="1.2" />
-  <rect x="742" y="182" width="2" height="446" fill="url(#cc-spine)" opacity="0.35" />
+  <line x1="748" y1="571" x2="1160" y2="571" stroke="#2a1a52" stroke-width="1.2" />
+  <rect x="742" y="178" width="2" height="440" fill="url(#cc-spine)" opacity="0.35" />
   <!-- ============ everything below here is the genjutsu, and it sits above the page ============ -->
   <!-- light coming down off the moon onto the world -->
   <g transform="translate(620,162)" opacity="0.16">
