@@ -245,9 +245,7 @@
       <path d="M385,114L390,114L394,116L388,115L385,114Z" />
       <path d="M387,123L390,125L393,125L390,127L386,125L387,123Z" />
     </g>
-    <path d="M335.0,124 L347.7,128.6" stroke="#34d399" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="347.7" cy="128.6" r="2.6" fill="#0a0620" stroke="#34d399" stroke-width="1.2" />
-    <text x="330" y="128" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Canada</text>
+    <text x="261.4" y="92.0" text-anchor="middle" fill="#ffffff" font-size="13" letter-spacing="0.6" stroke="#0a0620" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Canada</text>
   </g>
   <g opacity="1">
     <title>United States</title>
@@ -259,9 +257,7 @@
       <path d="M130,48L130,60L130,79L133,79L137,80L139,81L142,84L145,82L148,81L152,84L155,85L158,88L161,91L167,94L167,96L163,96L160,95L159,92L155,89L153,86L150,86L145,86L141,85L134,82L131,81L125,80L120,80L114,78L110,77L106,78L107,80L101,81L98,82L94,83L95,78L99,77L94,78L91,80L87,82L89,84L86,86L82,88L79,89L73,92L68,95L66,95L63,95L59,97L56,98L51,99L54,97L57,96L61,94L65,93L71,90L74,88L75,86L73,85L70,85L68,84L65,83L62,84L60,84L60,81L58,80L54,81L51,79L49,78L46,75L50,71L54,69L56,70L59,68L62,68L64,67L62,65L64,64L62,64L58,65L55,65L50,65L45,64L40,61L44,60L52,58L54,58L61,60L58,58L54,56L52,55L49,53L44,52L52,50L56,49L60,46L64,45L70,44L73,44L78,42L83,43L86,44L93,44L98,45L101,45L108,46L114,46L117,47L121,46L126,47L130,48Z" />
       <path d="M28,67L30,68L32,68L34,69L38,69L35,70L32,69L28,69Z" />
     </g>
-    <path d="M335.0,160 L343.2,150.3" stroke="#34d399" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="343.2" cy="150.3" r="2.6" fill="#0a0620" stroke="#34d399" stroke-width="1.2" />
-    <text x="330" y="164" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">United States</text>
+    <text x="269.8" y="152.8" text-anchor="middle" fill="#ffffff" font-size="13" letter-spacing="0.6" stroke="#0a0620" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">United States</text>
   </g>
   <g opacity="1">
     <title>Ireland</title>
@@ -269,7 +265,6 @@
       <path d="M579,100L580,103L577,106L571,108L567,107L569,104L568,100L572,98L575,96L575,100L577,100L579,100Z" />
     </g>
     <path d="M565.0,110 L579.1,102.2" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="579.1" cy="102.2" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="560" y="114" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Ireland</text>
   </g>
   <g opacity="1">
@@ -278,7 +273,6 @@
       <path d="M647,101L647,103L649,106L650,110L648,110L644,111L641,112L642,115L645,117L643,119L643,121L640,121L638,122L635,121L633,121L628,121L625,121L625,119L627,117L622,116L621,114L621,111L620,107L622,107L624,103L626,101L629,100L628,97L631,97L633,97L636,99L640,99L645,100Z" />
     </g>
     <path d="M565.0,134 L644.7,104.9" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="644.7" cy="104.9" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="560" y="138" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Germany</text>
   </g>
   <g opacity="1">
@@ -288,7 +282,6 @@
       <path d="M629,138L631,137L632,139L631,142L628,139Z" />
     </g>
     <path d="M565.0,158 L607.8,117.1" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="607.8" cy="117.1" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="560" y="162" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">France</text>
   </g>
   <g opacity="1">
@@ -297,7 +290,6 @@
       <path d="M657,120L654,121L654,124L650,124L646,125L641,124L637,124L635,124L632,123L635,122L638,122L640,121L643,122L643,119L645,117L648,118L651,117L653,118L657,118Z" />
     </g>
     <path d="M565.0,182 L654.6,119.3" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="654.6" cy="119.3" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="560" y="186" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Austria</text>
   </g>
   <g opacity="1">
@@ -306,7 +298,6 @@
       <path d="M632,122L633,124L633,126L631,125L628,127L626,127L623,127L620,126L623,122L625,121L628,121L632,122Z" />
     </g>
     <path d="M565.0,206 L624.8,123.5" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="624.8" cy="123.5" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="560" y="210" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Switzerland</text>
   </g>
   <g opacity="1">
@@ -315,7 +306,6 @@
       <path d="M695,50L695,52L700,54L697,57L701,61L698,64L701,66L700,68L705,70L701,74L694,78L688,79L682,80L676,81L671,78L672,74L670,71L675,67L682,64L685,63L680,60L678,54L673,51L669,50L671,49L675,51L679,50L682,51L686,50L687,47L692,46L697,47L695,50Z" />
     </g>
     <path d="M707.0,60 L683.1,79.4" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="683.1" cy="79.4" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="712" y="64" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Finland</text>
   </g>
   <g opacity="1">
@@ -324,7 +314,6 @@
       <path d="M693,82L691,84L692,87L688,88L685,87L681,87L678,85L682,82L686,81L690,82L693,82Z" />
     </g>
     <path d="M707.0,84 L682.5,81.9" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="682.5" cy="81.9" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="712" y="88" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Estonia</text>
   </g>
   <g opacity="1">
@@ -333,7 +322,6 @@
       <path d="M637,84L641,80L642,76L640,74L640,70L642,66L645,67L645,64L650,59L654,56L656,53L659,53L666,52L667,50L669,50L673,51L678,54L679,59L674,61L671,63L671,65L666,68L659,71L657,76L659,78L663,80L660,83L656,84L655,90L653,93L649,93L647,95L643,95L642,92L639,89L637,84Z" />
     </g>
     <path d="M707.0,108 L660.2,82.2" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="660.2" cy="82.2" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="712" y="112" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Sweden</text>
   </g>
   <g opacity="1">
@@ -343,7 +331,6 @@
       <path d="M641,93L640,97L637,95L641,93Z" />
     </g>
     <path d="M707.0,132 L641.9,94.4" stroke="#a78bfa" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="641.9" cy="94.4" r="2.6" fill="#0a0620" stroke="#a78bfa" stroke-width="1.2" />
     <text x="712" y="136" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Denmark</text>
   </g>
   <g opacity="1">
@@ -352,7 +339,6 @@
       <path d="M719,171L717,174L718,176L716,182L714,176L716,173L717,171L719,169Z" />
     </g>
     <path d="M705.0,176 L717.4,174.1" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="717.4" cy="174.1" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="700" y="180" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Israel</text>
   </g>
   <g opacity="1">
@@ -361,7 +347,6 @@
       <path d="M772,199L775,199L778,199L780,200L782,197L785,195L787,193L788,197L786,199L785,202L784,204L773,203L772,200Z" />
     </g>
     <path d="M777.0,222 L781.3,198.5" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="781.3" cy="198.5" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="772" y="226" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">United Arab Emirates</text>
   </g>
   <g opacity="1">
@@ -370,9 +355,7 @@
       <path d="M965,219L962,218L962,215L967,213L970,214L968,218L965,219Z" />
       <path d="M868,139L870,136L867,130L873,129L877,122L884,123L886,118L889,118L891,116L893,118L896,120L901,121L903,124L902,128L907,130L912,130L916,132L918,133L919,136L925,138L932,138L936,138L939,138L944,140L948,140L954,140L959,138L964,138L968,137L970,135L973,134L971,132L973,130L978,131L982,129L987,128L989,125L991,124L996,124L999,124L996,121L994,120L991,121L988,120L985,120L987,116L989,114L993,115L998,113L1001,108L1002,105L1003,102L1007,102L1012,102L1017,103L1020,104L1022,107L1024,111L1026,114L1031,115L1035,118L1037,121L1042,121L1045,119L1050,118L1048,121L1046,126L1044,130L1040,129L1037,130L1038,133L1037,137L1033,137L1027,140L1024,142L1021,143L1017,145L1014,147L1010,148L1007,149L1004,150L1005,147L1007,145L1003,145L999,147L997,149L993,149L994,153L996,154L999,156L1003,154L1006,155L1008,155L1004,158L999,161L997,164L1001,165L1002,169L1004,172L1006,174L1006,177L1004,178L1007,181L1006,183L1006,186L1001,190L999,194L996,198L991,201L986,204L983,204L981,206L977,206L973,208L969,209L968,212L965,210L962,208L957,207L956,204L953,203L948,204L945,204L942,204L939,206L939,209L937,209L935,208L931,206L932,204L930,203L929,200L925,200L926,196L929,194L929,191L929,188L926,186L921,185L920,182L918,183L915,182L911,185L908,187L906,187L902,186L900,186L896,189L896,186L894,187L890,187L886,186L883,185L881,184L878,182L874,180L872,179L866,177L862,175L862,171L864,172L863,168L863,166L859,162L854,160L853,158L851,156L849,153L848,151L846,149L849,145L852,145L855,145L856,143L861,143L867,140Z" />
     </g>
-    <path d="M1099.0,96 L988.0,147.0" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="988.0" cy="147.0" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
-    <text x="1104" y="100" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">China</text>
+    <text x="946.2" y="162.5" text-anchor="middle" fill="#ffffff" font-size="13" letter-spacing="0.6" stroke="#0a0620" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">China</text>
   </g>
   <g opacity="1">
     <title>South Korea</title>
@@ -380,7 +363,6 @@
       <path d="M1021,154L1024,152L1026,152L1031,155L1032,157L1032,161L1027,164L1025,165L1022,165L1022,161L1020,158L1023,157L1021,154Z" />
     </g>
     <path d="M1099.0,120 L1023.3,154.8" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="1023.3" cy="154.8" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="1104" y="124" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">South Korea</text>
   </g>
   <g opacity="1">
@@ -391,7 +373,6 @@
       <path d="M1041,168L1045,167L1049,166L1047,169L1044,169L1041,170Z" />
     </g>
     <path d="M1099.0,144 L1065.6,161.1" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="1065.6" cy="161.1" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="1104" y="148" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Japan</text>
   </g>
   <g opacity="1">
@@ -400,7 +381,6 @@
       <path d="M1006,199L1004,204L1002,207L1001,204L1000,201L1002,198L1005,196L1006,199Z" />
     </g>
     <path d="M1099.0,176 L1005.2,196.6" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="1005.2" cy="196.6" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="1104" y="180" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Taiwan</text>
   </g>
   <g opacity="1">
@@ -409,7 +389,6 @@
       <path d="M951,232L948,232L943,233L941,235L942,239L939,238L936,238L937,235L934,235L933,239L932,244L931,247L931,249L933,249L934,252L935,255L939,258L939,261L937,261L934,258L932,256L928,252L929,247L930,243L932,240L931,237L930,234L928,231L928,229L930,226L928,224L926,221L925,219L928,214L930,214L934,212L935,215L938,215L937,219L937,222L940,220L943,220L947,219L949,222L949,225L952,228L952,231Z" />
     </g>
     <path d="M1099.0,208 L935.0,234.1" stroke="#22d3ee" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="935.0" cy="234.1" r="2.6" fill="#0a0620" stroke="#22d3ee" stroke-width="1.2" />
     <text x="1104" y="212" text-anchor="start" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Thailand</text>
   </g>
   <g opacity="1">
@@ -418,9 +397,7 @@
       <path d="M1092,416L1095,420L1093,424L1090,425L1087,425L1085,422L1084,420L1082,417L1085,416L1088,417L1092,416Z" />
       <path d="M1020,387L1017,389L1014,390L1012,393L1009,393L1007,393L1004,393L1002,393L1000,393L997,395L993,397L991,397L989,397L985,395L983,392L986,391L986,387L984,382L983,378L982,376L981,374L980,371L978,368L978,365L981,368L979,363L978,361L979,359L979,355L980,353L981,355L982,353L985,352L989,349L991,349L994,348L996,348L999,347L1003,346L1006,342L1008,339L1010,335L1011,338L1012,335L1014,334L1015,332L1017,329L1020,328L1024,326L1026,328L1030,330L1032,330L1033,325L1035,322L1037,321L1042,320L1039,318L1043,318L1048,320L1051,321L1054,320L1057,321L1054,324L1053,327L1052,330L1054,332L1057,333L1061,336L1064,337L1067,339L1070,338L1071,335L1072,330L1072,328L1072,323L1073,320L1074,317L1076,317L1076,319L1078,323L1079,326L1080,328L1082,327L1085,330L1085,334L1086,336L1087,339L1088,343L1092,345L1094,347L1096,348L1098,351L1099,354L1102,355L1103,358L1105,360L1110,364L1110,367L1110,371L1112,374L1112,377L1110,381L1110,385L1108,389L1106,390L1104,393L1102,397L1100,401L1100,404L1098,406L1094,406L1091,407L1088,410L1085,409L1083,408L1079,409L1076,408L1072,408L1069,407L1067,405L1066,402L1064,399L1060,399L1061,395L1059,397L1056,398L1058,394L1059,390L1057,393L1055,394L1053,396L1051,395L1049,391L1048,389L1043,387L1041,387L1038,385L1032,385L1027,386L1024,388L1020,387Z" />
     </g>
-    <path d="M1090.0,402 L1097.1,397.6" stroke="#fbbf24" stroke-width="0.8" opacity="0.5" fill="none" />
-    <circle cx="1097.1" cy="397.6" r="2.6" fill="#0a0620" stroke="#fbbf24" stroke-width="1.2" />
-    <text x="1085" y="406" text-anchor="end" fill="#ece8f8" font-size="12.5" letter-spacing="0.3" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Australia</text>
+    <text x="1047.9" y="369.7" text-anchor="middle" fill="#ffffff" font-size="13" letter-spacing="0.6" stroke="#0a0620" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">Australia</text>
   </g>
   <g opacity="1">
     <title>Perth, Western Australia. This is where I am.</title>
