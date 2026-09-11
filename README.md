@@ -375,20 +375,15 @@ source, and the awkward details are kept rather than smoothed over.
 
 ## 世界 · Countries I am open to work in
 
-| Region | Countries |
+| | Countries |
 | :-- | :-- |
-| **East Asia** | <img src="assets/flag-jp.svg" width="22" alt=""> Japan · <img src="assets/flag-kr.svg" width="22" alt=""> South Korea · <img src="assets/flag-cn.svg" width="22" alt=""> China · <img src="assets/flag-tw.svg" width="22" alt=""> Taiwan |
-| **Southeast Asia** | <img src="assets/flag-th.svg" width="22" alt=""> Thailand |
-| **West Asia** | <img src="assets/flag-il.svg" width="22" alt=""> Israel · <img src="assets/flag-ae.svg" width="22" alt=""> United Arab Emirates |
-| **Western Europe** | <img src="assets/flag-ie.svg" width="22" alt=""> Ireland · <img src="assets/flag-fr.svg" width="22" alt=""> France · <img src="assets/flag-de.svg" width="22" alt=""> Germany · <img src="assets/flag-at.svg" width="22" alt=""> Austria · <img src="assets/flag-ch.svg" width="22" alt=""> Switzerland |
-| **Northern Europe** | <img src="assets/flag-dk.svg" width="22" alt=""> Denmark · <img src="assets/flag-se.svg" width="22" alt=""> Sweden · <img src="assets/flag-fi.svg" width="22" alt=""> Finland · <img src="assets/flag-ee.svg" width="22" alt=""> Estonia |
-| **North America** | <img src="assets/flag-ca.svg" width="22" alt=""> Canada · <img src="assets/flag-us.svg" width="22" alt=""> United States |
-| **Oceania** | <img src="assets/flag-au.svg" width="22" alt=""> Australia |
+| **Primary** | <img src="assets/flag-au.svg" width="22" alt=""> Australia |
+| **Secondary** | <img src="assets/flag-jp.svg" width="22" alt=""> Japan · <img src="assets/flag-kr.svg" width="22" alt=""> South Korea · <img src="assets/flag-tw.svg" width="22" alt=""> Taiwan · <img src="assets/flag-cn.svg" width="22" alt=""> China · <img src="assets/flag-th.svg" width="22" alt=""> Thailand · <img src="assets/flag-ae.svg" width="22" alt=""> United Arab Emirates · <img src="assets/flag-sa.svg" width="22" alt=""> Saudi Arabia · <img src="assets/flag-de.svg" width="22" alt=""> Germany · <img src="assets/flag-nl.svg" width="22" alt=""> Netherlands · <img src="assets/flag-fr.svg" width="22" alt=""> France · <img src="assets/flag-ie.svg" width="22" alt=""> Ireland · <img src="assets/flag-us.svg" width="22" alt=""> United States · <img src="assets/flag-ca.svg" width="22" alt=""> Canada |
 
 <div align="center">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/worldmap-static.svg" />
-  <img src="assets/worldmap.svg" alt="A world map with nineteen countries filled in. East Asia: Japan, South Korea, China and Taiwan. Southeast Asia: Thailand. West Asia: Israel and the United Arab Emirates. Western Europe: Ireland, France, Germany, Austria and Switzerland. Northern Europe: Denmark, Sweden, Finland and Estonia. North America: Canada and the United States. Oceania: Australia. A green star marks Perth in Western Australia, where I am now." width="100%" />
+  <img src="assets/worldmap.svg" alt="A world map with fourteen countries filled in. Primary: Australia, with a green star on Perth, where I am now. Secondary: Japan, South Korea, Taiwan, China, Thailand, the United Arab Emirates, Saudi Arabia, Germany, the Netherlands, France, Ireland, the United States and Canada." width="100%" />
 </picture>
 </div>
 
