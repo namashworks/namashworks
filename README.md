@@ -260,9 +260,8 @@ All sixteen are my own work. [Forks and learning explorations](https://github.co
 
 ## 数据 · Before there is a model, there is data
 
-Most of the work behind any model is data work: getting it in, keeping it honest, and being able to
-ask it a straight question afterwards and get an answer you can defend. This is the shape of that
-question.
+Observability is not a dashboard, it is being able to ask your data a straight question afterwards
+and get an answer you can defend. This is the shape of that question.
 
 <div align="center">
 <picture>
