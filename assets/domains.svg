@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="Seven domains I am passionate about: healthcare, med tech, mining, robotics, quantum computing, space technology, and the advancement of AI.">
+  <defs>
+    <linearGradient id="dm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070c1a"/>
+      <stop offset="60%" stop-color="#0d1428"/>
+      <stop offset="100%" stop-color="#141d3a"/>
+    </linearGradient>
+    <radialGradient id="dm-glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#a78bfa" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dm-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#7fe7f7" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#dm-bg)"/>
+  <rect width="1200" height="320" fill="url(#dm-scan)"/>
+
+  <g stroke="#22d3ee" stroke-width="1.6" fill="none" opacity="0.45">
+    <path d="M16,44 V16 H44"/><path d="M1156,16 H1184 V44"/>
+    <path d="M1184,276 V304 H1156"/><path d="M44,304 H16 V276"/>
+    <animate attributeName="opacity" values="0.45;0.82;0.45" keyTimes="0;0.5;1" dur="4.1s" repeatCount="indefinite"/>
+  </g>
+
+  <text x="30" y="128" fill="#a78bfa" opacity="0.13" font-size="13"
+        font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP','Meiryo',sans-serif">
+    <tspan x="30" dy="0">分</tspan><tspan x="30" dy="18">野</tspan></text>
+
+  <text x="60" y="44" fill="#22d3ee" opacity="0" font-size="11" letter-spacing="3.2"
+        font-family="'JetBrains Mono','SF Mono',Consolas,monospace">
+    <animate attributeName="opacity" values="0;0.85" keyTimes="0;1" dur="0.5s" begin="0.15s" fill="freeze"/>DOMAINS · WHERE I WANT MY WORK TO LAND</text>
+
+  <!-- the baseline the seven stand on, drawn once left to right -->
+  <path d="M60,262 H1140" fill="none" stroke="#22d3ee" stroke-width="1.2" opacity="0.35" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="2.2s" begin="0.3s" fill="freeze"/>
+  </path>
+
+  <!-- Seven tiles. Each: a faint index, a ring, a glow that only breathes in opacity,
+       a single-stroke icon that draws itself in, and the name in full words.
+       Nothing here scales or moves position. -->
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" fill="#c9d5e4" text-anchor="middle">
+
+    <!-- 1 · Healthcare -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="0.30s" fill="freeze"/>
+      <text x="137" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">01</text>
+      <circle cx="137" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="137" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="137" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(137,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M0,18 C-24,2 -24,-20 -11,-20 C-5,-20 -1,-15 0,-11 C1,-15 5,-20 11,-20 C24,-20 24,2 0,18 Z" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="1.1s" begin="0.45s" fill="freeze"/>
+        </path>
+        <path d="M-14,-3 H-7 L-4,-10 L2,5 L5,-3 H14" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.7s" begin="1.20s" fill="freeze"/>
+        </path>
+      </g>
+      <text x="137" y="232">Healthcare</text>
+    </g>
+
+    <!-- 2 · Med tech -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="0.52s" fill="freeze"/>
+      <text x="291" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">02</text>
+      <circle cx="291" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="291" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="291" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(291,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M-14,-22 V-6 A14,14 0 0 0 14,-6 V-22" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="1.0s" begin="0.67s" fill="freeze"/>
+        </path>
+        <path d="M0,8 V14 Q0,22 8,22 H12" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.6s" begin="1.35s" fill="freeze"/>
+        </path>
+        <circle cx="18" cy="22" r="5.5" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.5s" begin="1.65s" fill="freeze"/>
+        </circle>
+        <path d="M-14,-22 l-3,-4 M14,-22 l3,-4" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.3s" begin="1.35s" fill="freeze"/>
+        </path>
+      </g>
+      <text x="291" y="232">Med tech</text>
+    </g>
+
+    <!-- 3 · Mining -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="0.74s" fill="freeze"/>
+      <text x="446" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">03</text>
+      <circle cx="446" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="2.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="446" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="446" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(446,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M-20,21 L14.5,-12.5" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.7s" begin="0.89s" fill="freeze"/>
+        </path>
+        <path d="M-6,-20 A26,26 0 0 1 22,8" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.8s" begin="1.30s" fill="freeze"/>
+        </path>
+      </g>
+      <text x="446" y="232">Mining</text>
+    </g>
+
+    <!-- 4 · Robotics -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="0.96s" fill="freeze"/>
+      <text x="600" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">04</text>
+      <circle cx="600" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="600" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(600,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M-22,22 H14" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.5s" begin="1.11s" fill="freeze"/>
+        </path>
+        <path d="M-8,22 V4" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="1.45s" fill="freeze"/>
+        </path>
+        <circle cx="-8" cy="4" r="4" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="1.70s" fill="freeze"/>
+        </circle>
+        <path d="M-5,1 L11,-13" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.5s" begin="1.95s" fill="freeze"/>
+        </path>
+        <circle cx="14" cy="-16" r="4" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.30s" fill="freeze"/>
+        </circle>
+        <path d="M17,-19 l7,-5 M17,-13 l7,3" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.3s" begin="2.55s" fill="freeze"/>
+        </path>
+      </g>
+      <text x="600" y="232">Robotics</text>
+    </g>
+
+    <!-- 5 · Quantum computing -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="1.18s" fill="freeze"/>
+      <text x="754" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">05</text>
+      <circle cx="754" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="2.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="754" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="754" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(754,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <circle cx="0" cy="0" r="21" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.9s" begin="1.33s" fill="freeze"/>
+        </circle>
+        <ellipse cx="0" cy="0" rx="21" ry="7" stroke-width="1.3" opacity="0.8" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.8s" begin="1.73s" fill="freeze"/>
+        </ellipse>
+        <path d="M0,-27 V27" stroke-width="1.3" opacity="0.8" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.5s" begin="2.10s" fill="freeze"/>
+        </path>
+        <path d="M0,0 L12,-15" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.40s" fill="freeze"/>
+        </path>
+        <circle cx="12" cy="-15" r="3.2" fill="#22d3ee" stroke="none" opacity="0">
+          <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.3s" begin="2.70s" fill="freeze"/>
+        </circle>
+      </g>
+      <text x="754" y="232">Quantum computing</text>
+    </g>
+
+    <!-- 6 · Space technology -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="1.40s" fill="freeze"/>
+      <text x="909" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">06</text>
+      <circle cx="909" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="909" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="909" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(909,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M0,-24 C9,-15 10,2 8,14 H-8 C-10,2 -9,-15 0,-24 Z" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="1.0s" begin="1.55s" fill="freeze"/>
+        </path>
+        <path d="M-8,3 L-15,13 H-8 M8,3 L15,13 H8" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.6s" begin="2.20s" fill="freeze"/>
+        </path>
+        <circle cx="0" cy="-6" r="3.5" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.45s" fill="freeze"/>
+        </circle>
+        <path d="M-4,14 L0,22 L4,14" pathLength="100">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.75s" fill="freeze"/>
+        </path>
+      </g>
+      <text x="909" y="232">Space technology</text>
+    </g>
+
+    <!-- 7 · Advancement of AI -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" keyTimes="0;1" dur="0.5s" begin="1.62s" fill="freeze"/>
+      <text x="1063" y="98" fill="#64748b" font-size="10.5" letter-spacing="2.4" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">07</text>
+      <circle cx="1063" cy="156" r="40" fill="url(#dm-glow)" opacity="0.4">
+        <animate attributeName="opacity" values="0.40;0.55;0.40;0.25;0.40" keyTimes="0;0.25;0.5;0.75;1" dur="5.2s" begin="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1063" cy="156" r="40" fill="none" stroke="#243049" stroke-width="1.2"/>
+      <circle cx="1063" cy="262" r="3" fill="#22d3ee"/>
+      <g transform="translate(1063,156)" fill="none" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="100">
+        <path d="M-18,-12 L0,-18 M-18,-12 L0,0 M-18,-12 L0,18 M-18,12 L0,-18 M-18,12 L0,0 M-18,12 L0,18"
+              pathLength="100" stroke-width="1.3" opacity="0.8">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.9s" begin="1.77s" fill="freeze"/>
+        </path>
+        <path d="M0,-18 L18,-12 M0,0 L18,-12 M0,18 L18,-12 M0,-18 L18,12 M0,0 L18,12 M0,18 L18,12"
+              pathLength="100" stroke-width="1.3" opacity="0.8">
+          <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.9s" begin="2.17s" fill="freeze"/>
+        </path>
+        <g fill="#0d1428" stroke="#22d3ee" stroke-width="2">
+          <circle cx="-18" cy="-12" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="1.77s" fill="freeze"/>
+          </circle>
+          <circle cx="-18" cy="12" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="1.87s" fill="freeze"/>
+          </circle>
+          <circle cx="0" cy="-18" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.17s" fill="freeze"/>
+          </circle>
+          <circle cx="0" cy="0" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.27s" fill="freeze"/>
+          </circle>
+          <circle cx="0" cy="18" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.37s" fill="freeze"/>
+          </circle>
+          <circle cx="18" cy="-12" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.67s" fill="freeze"/>
+          </circle>
+          <circle cx="18" cy="12" r="3.6" pathLength="100">
+            <animate attributeName="stroke-dashoffset" values="100;0" keyTimes="0;1" dur="0.4s" begin="2.77s" fill="freeze"/>
+          </circle>
+        </g>
+      </g>
+      <text x="1063" y="232">Advancement of AI</text>
+    </g>
+  </g>
+</svg>

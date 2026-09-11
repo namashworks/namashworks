@@ -309,31 +309,15 @@ A test does exactly that and fails if the picture, this table and the `.sql` fil
 
 </details>
 
-## 進路 · Where I want this pointed
-
-Two lists, and the difference between them matters. The left one has repositories behind it. The right
-one does not yet, which is why it is drawn dashed.
+## 分野 · Domains I am passionate about
 
 <div align="center">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/roadmap-static.svg" />
-  <img src="assets/roadmap.svg" alt="A trajectory panel. Already touched, drawn solid: healthcare and medtech, computational biology, quantum tooling, agent infrastructure, learning systems. Want to work on next, drawn dashed because nothing ships there yet: robotics and autonomy, mining technology, space telemetry and on board inference, and the AI tooling layer." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/domains-static.svg" />
+  <img src="assets/domains.svg" alt="Seven domains I am passionate about: healthcare, med tech, mining, robotics, quantum computing, space technology, and the advancement of AI." width="100%" />
 </picture>
-<sub><b>Solid is work that exists. Dashed is work that does not.</b> I would rather be clear about which list a thing is on, because a roadmap that does not separate the two is just a wish printed in a serious font.</sub>
+<sub><b>The fields I keep coming back to.</b> If your problem lives in one of them, I want to hear about it.</sub>
 </div>
-
-<details>
-<summary><b>The same two lists as text</b></summary>
-
-<br>
-
-- **Already touched** · healthcare and medtech · computational biology · quantum tooling · agent infrastructure · learning systems
-- **Want to work on next** · robotics and autonomy · mining technology, the autonomous haulage and ore body side · space, telemetry and on board inference · and AI itself, the tooling layer rather than the demo layer
-
-The second list is ambition, not a claim. Nothing on it has a repository behind it yet, and this page
-would be worth less if it pretended otherwise.
-
-</details>
 
 ## Arbeitsweise · How I work
 
