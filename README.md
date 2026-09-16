@@ -44,9 +44,9 @@ and each one needs its own layer.
 
 | The failure | What it actually costs | The layer that stops it | Where I built that layer |
 | :-- | :-- | :-- | :-- |
-| **Fabricated fact** | A confident wrong answer sends someone down the wrong path with full confidence. A gap only sends them back to the source. The confident version is worse. | **Evidence** | [egkg-architecture](https://github.com/namashworks/egkg-architecture) |
-| **Silent regression** | Quality drops and nothing tells you. The first report comes from a user, and by then it has been wrong for weeks. | **Evaluation** | [stam-ml](https://github.com/namashworks/stam-ml) |
-| **Hardware drift** | Yesterday's benchmark quietly stops being true. Every number you compare against it is now a lie. | **Observability** | [qledger](https://github.com/namashworks/qledger) |
+| **Fabricated fact** | A confident wrong answer sends someone down the wrong path with full confidence. A gap only sends them back to the source. The confident version is worse. | **Evidence** | [egkg-architecture](https://github.com/namashworks/egkg-architecture)<br><sub>[the design](https://github.com/namashworks/egkg-architecture/blob/main/README.md)</sub> |
+| **Silent regression** | Quality drops and nothing tells you. The first report comes from a user, and by then it has been wrong for weeks. | **Evaluation** | [stam-ml](https://github.com/namashworks/stam-ml)<br><sub>[core](https://github.com/namashworks/stam-ml/blob/main/stam/core.py) · [tests](https://github.com/namashworks/stam-ml/blob/main/tests/test_core.py) · [benchmarks](https://github.com/namashworks/stam-ml/blob/main/benchmarks/run_benchmarks.py)</sub> |
+| **Hardware drift** | Yesterday's benchmark quietly stops being true. Every number you compare against it is now a lie. | **Observability** | [qledger](https://github.com/namashworks/qledger)<br><sub>[storage](https://github.com/namashworks/qledger/blob/main/qledger/storage/database.py) · [tests](https://github.com/namashworks/qledger/blob/main/tests/unit/test_database.py) · [CI](https://github.com/namashworks/qledger/blob/main/.github/workflows/ci.yml)</sub> |
 
 <details>
 <summary><b>Evidence · the rule that makes a claim auditable</b></summary>
@@ -156,9 +156,9 @@ Three repositories are covered in the threat model above. These are the other th
 
 | Project | What it is | The hard part |
 | :-- | :-- | :-- |
-| **[Bridge ADK](https://github.com/namashworks/Bridge-ADK)** | `bridge_adk.serve(agent)` puts an agent from any of the three major vendor SDKs on the A2A wire. | Auto detecting the framework, so the user writes zero protocol code and subclasses nothing. Limits are documented, it is early. |
-| **[Genetic Transformer](https://github.com/namashworks/Genetic-Transformer)** | A transformer for translating between English and DNA, RNA, codons, amino acids and protein. | Giving attention the codon table as structure, instead of hoping it rediscovers biology from scratch. |
-| **[Gen Z Medical Advisor](https://github.com/namashworks/Genz-medical-advisor)** | Qwen 2.5 3B, LoRA fine tuned on synthetic data, for health guidance people will actually read. **Experimental research, not a clinically validated product.** | Refusal behaviour at 3B, where there is no headroom to be sloppy about what the model declines to answer. |
+| **[Bridge ADK](https://github.com/namashworks/Bridge-ADK)**<br><sub>[code](https://github.com/namashworks/Bridge-ADK/tree/main/src/bridge_adk) · [tests](https://github.com/namashworks/Bridge-ADK/blob/main/tests/test_e2e.py) · [docs](https://github.com/namashworks/Bridge-ADK/tree/main/docs)</sub> | `bridge_adk.serve(agent)` puts an agent from any of the three major vendor SDKs on the A2A wire. | Auto detecting the framework, so the user writes zero protocol code and subclasses nothing. Limits are documented, it is early. |
+| **[Genetic Transformer](https://github.com/namashworks/Genetic-Transformer)**<br><sub>[code](https://github.com/namashworks/Genetic-Transformer/tree/main/genetic_transformer) · [tests](https://github.com/namashworks/Genetic-Transformer/tree/main/tests) · [CI](https://github.com/namashworks/Genetic-Transformer/blob/main/.github/workflows/ci.yml)</sub> | A transformer for translating between English and DNA, RNA, codons, amino acids and protein. | Giving attention the codon table as structure, instead of hoping it rediscovers biology from scratch. |
+| **[Gen Z Medical Advisor](https://github.com/namashworks/Genz-medical-advisor)**<br><sub>[notebooks](https://github.com/namashworks/Genz-medical-advisor/tree/main/code) · [dataset](https://github.com/namashworks/Genz-medical-advisor/blob/main/dataset/Genzmed.json)</sub> | Qwen 2.5 3B, LoRA fine tuned on synthetic data, for health guidance people will actually read. **Experimental research, not a clinically validated product.** | Refusal behaviour at 3B, where there is no headroom to be sloppy about what the model declines to answer. |
 
 ## STAM, in motion
 
