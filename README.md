@@ -12,12 +12,11 @@
 
 ### Most AI demos work once. I care about the part that has to work every time.
 
-So this page is not a list of things I have used. It is the **failure model I design against**,
-and the code where I handle each failure.
-
 **Looking for AI Engineer roles.** Also open to Data Science, Data Engineering and Data Analytics.
 
-Western Australia · **Full work rights to September 2028** on a subclass 485 graduate visa, so there is nothing to sponsor
+Perth, Western Australia · **Full work rights to September 2028** on a subclass 485 graduate visa, so there is nothing to sponsor
+
+<sub>Python · PyTorch · scikit-learn · LoRA fine tuning · Google ADK, OpenAI and Claude agent SDKs on A2A · Qiskit · SQL</sub>
 
 [LinkedIn](https://au.linkedin.com/in/itechno) · [namash.work@gmail.com](mailto:namash.work@gmail.com) · [All repositories](https://github.com/namashworks?tab=repositories)
 
@@ -216,7 +215,13 @@ splitting every time an error happens to be large.
 ## 系統 · The whole stack
 
 Sixteen repositories, and they are not a random pile. Seven rings, lighting from the centre outward:
-the algorithm I wrote myself burning at the core, quantum tooling out at the frontier.
+the algorithm I wrote myself burning at the core, quantum tooling out at the frontier. It is a map of
+where things sit, not a claim that these sixteen run as one deployed system.
+
+<details>
+<summary><b>Why the rings are in this order</b></summary>
+
+<br>
 
 **The order is not deployment order, it is how much each ring assumes.** The **learning core** assumes
 least: STAM is mine, and it is the only thing here not sitting on top of somebody else's model.
@@ -231,7 +236,7 @@ which is exactly why the first thing I built for it was a ledger rather than a m
 Read it inward and it is one question repeated: how much of this still works if the layer under it
 changes. That is the threat model at the top of this page, asked one level up.
 
-It is a map of where things sit, not a claim that these sixteen run as one deployed system.
+</details>
 
 <div align="center">
 <picture>
@@ -380,12 +385,9 @@ source, and the awkward details are kept rather than smoothed over.
 **I solve real problems with AI and data, and I build the part that keeps working after the demo.**
 If you are hiring for something that has to be right every time, let's talk.
 
-**Western Australia, on a 485 work visa, and happy to relocate with sponsorship for the right role.**
+**Perth, Western Australia, on a 485 work visa, and happy to relocate with sponsorship for the right role.**
 
 **[namash.work@gmail.com](mailto:namash.work@gmail.com)** · **[Connect on LinkedIn](https://au.linkedin.com/in/itechno)**
-
-The most interesting way to start is an issue on one of the repositories above, because then the
-conversation begins with something concrete.
 
 <div align="center">
 
