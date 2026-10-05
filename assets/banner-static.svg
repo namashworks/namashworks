@@ -86,5 +86,5 @@
   <rect x="72" y="142" width="272" height="2.5" fill="url(#b-rule)" />
   <text x="72" y="176" fill="#22d3ee" font-size="14.5" font-weight="600" letter-spacing="3.4" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">AI ENGINEER · DATA SCIENTIST · DATA ENGINEER</text>
   <text x="72" y="214" fill="#94a3b8" font-size="20" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">I build the reliability layer under AI systems.</text>
-  <text x="72" y="248" fill="#64748b" font-size="12.5" letter-spacing="1.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">healthcare · medtech · robotics · mining · space · quantum</text>
+  <text x="72" y="248" fill="#8796ab" font-size="12.5" letter-spacing="1.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">healthcare · medtech · robotics · mining · space · quantum</text>
 </svg>

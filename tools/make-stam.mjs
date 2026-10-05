@@ -121,7 +121,7 @@ for (let f = 0; f < FRAMES; f++) {
   frames.push({
     pos: anchors.map((a) => ({ id: a.id, u: a.u, v: a.v, m: a.m, born: a.born })),
     edges: gabriel(anchors).map(([i, j]) => [anchors[i].id, anchors[j].id]),
-    signs: win.signs.slice(), H: win.signs.length ? entropy(win.signs) : 1,
+    signs: win.signs.slice(), H: win.signs.length >= WINDOW ? entropy(win.signs) : null,   // undefined until the window fills
     ready: win.signs.length >= WINDOW,
     count: anchors.length, seen, events,
   });
@@ -191,7 +191,7 @@ for (const id of ids) {
 const HX = 800;
 let hud = '';
 hud += `  <text x="${HX}" y="96" fill="#a78bfa" font-size="11" letter-spacing="2.6" font-family="'JetBrains Mono','SF Mono',Consolas,monospace">STRUCTURAL ENTROPY TRIGGER</text>\n`;
-hud += `  <text x="${HX}" y="118" fill="#64748b" font-size="11" font-family="'Segoe UI',Arial,sans-serif">Sign of the last ${WINDOW} errors, not their size.</text>\n`;
+hud += `  <text x="${HX}" y="118" fill="#8796ab" font-size="11" font-family="'Segoe UI',Arial,sans-serif">Sign of the last ${WINDOW} errors, not their size.</text>\n`;
 
 for (let s = 0; s < WINDOW; s++) {
   const sx = HX + s * 24;
@@ -203,24 +203,26 @@ for (let s = 0; s < WINDOW; s++) {
 }
 
 const BW = 288;
-hud += `  <text x="${HX}" y="188" fill="#64748b" font-size="10.5" letter-spacing="2" font-family="'JetBrains Mono',monospace">H = -p log2 p - (1-p) log2 (1-p)</text>\n`;
+hud += `  <text x="${HX}" y="188" fill="#8796ab" font-size="10.5" letter-spacing="2" font-family="'JetBrains Mono',monospace">H = -p log2 p - (1-p) log2 (1-p)</text>\n`;
 hud += `  <rect x="${HX}" y="200" width="${BW}" height="12" rx="6" fill="#131c30"/>\n`;
 hud += `  <rect x="${HX}" y="200" width="0" height="12" rx="6" fill="#4ade80">`
-  + anim('width', frames.map((f) => Math.round(f.H * BW)))
-  + anim('fill', frames.map((f) => (f.H < FISSION_THRESHOLD ? '#f87171' : '#4ade80'))) + '</rect>\n';
+  + step('width', frames.map((f) => (f.H === null ? 0 : Math.round(f.H * BW))))
+  + step('fill', frames.map((f) => (f.H !== null && f.H < FISSION_THRESHOLD ? '#f87171' : '#4ade80'))) + '</rect>\n';
 const tx = HX + Math.round(FISSION_THRESHOLD * BW);
 hud += `  <line x1="${tx}" y1="194" x2="${tx}" y2="218" stroke="#fbbf24" stroke-width="1.4"/>\n`;
 hud += `  <text x="${tx + 6}" y="230" fill="#fbbf24" font-size="10" font-family="'JetBrains Mono',monospace">0.7 fission threshold</text>\n`;
 
 const splitting = frames.map((f) => (f.ready && f.H < FISSION_THRESHOLD ? '1' : '0'));
-const holding = frames.map((f) => (f.ready && f.H < FISSION_THRESHOLD ? '0' : '1'));
+const holding = frames.map((f) => (f.ready && f.H >= FISSION_THRESHOLD ? '1' : '0'));
+const collecting = frames.map((f) => (f.ready ? '0' : '1'));
+hud += `  <text x="${HX}" y="266" font-size="14" letter-spacing="2.4" fill="#8796ab" opacity="0" font-family="'JetBrains Mono',monospace">COLLECTING SIGNS · NO READING YET${step('opacity', collecting)}</text>\n`;
 hud += `  <text x="${HX}" y="266" font-size="14" letter-spacing="2.4" fill="#4ade80" opacity="0" font-family="'JetBrains Mono',monospace">SIGNS BALANCED → NOISE → HOLD${step('opacity', holding)}</text>\n`;
 hud += `  <text x="${HX}" y="266" font-size="14" letter-spacing="2.4" fill="#f87171" opacity="0" font-family="'JetBrains Mono',monospace">SIGNS ONE-SIDED → BIAS → SPLIT${step('opacity', splitting)}</text>\n`;
 
 hud += `  <line x1="${HX}" y1="292" x2="${HX + BW}" y2="292" stroke="#1e2a40" stroke-width="1.2"/>\n`;
 hud += `  <text x="${HX}" y="318" fill="#8ea9f2" font-size="11" letter-spacing="2.6" font-family="'JetBrains Mono',monospace">KINETIC ANCHOR FLOW</text>\n`;
 hud += `  <text x="${HX}" y="342" fill="#c9d5e4" font-size="13" font-family="'JetBrains Mono',monospace">aᵢ ← aᵢ + η · (ρᵢ / mᵢ) · (x − aᵢ)</text>\n`;
-hud += `  <text x="${HX}" y="362" fill="#64748b" font-size="11" font-family="'Segoe UI',Arial,sans-serif">Radius is mass. Heavy anchors stop moving.</text>\n`;
+hud += `  <text x="${HX}" y="362" fill="#8796ab" font-size="11" font-family="'Segoe UI',Arial,sans-serif">Radius is mass. Heavy anchors stop moving.</text>\n`;
 
 for (let n = 5; n <= MAX_ANCHORS; n++) {
   const on = frames.map((f) => (f.count === n ? '1' : '0'));
@@ -257,7 +259,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" widt
   <line x1="778" y1="70" x2="778" y2="410" stroke="#1e2a40" stroke-width="1.2"/>
 
 ${body}${hud}
-  <text x="56" y="452" fill="#475569" font-size="10.5" letter-spacing="1.6"
+  <text x="56" y="452" fill="#7d8ba1" font-size="10.5" letter-spacing="1.6"
         font-family="'JetBrains Mono','SF Mono',Consolas,monospace">THE TARGET STEPS AT u=0.62 · ANCHORS ON THE STEP GET ONE-SIDED ERRORS AND SPLIT · ANCHORS IN NOISE STAY PUT · REAL RULES, SYNTHETIC DATA</text>
 </svg>
 `;

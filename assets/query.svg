@@ -38,7 +38,7 @@
   <rect x="40" y="28" width="10" height="10" fill="#22d3ee"/>
   <text x="62" y="38" fill="#c9d5e4" font-size="12.5" letter-spacing="1.2"
         font-family="'JetBrains Mono','SF Mono',Consolas,monospace">experiments.db</text>
-  <text x="196" y="38" fill="#475569" font-size="10.5" letter-spacing="2"
+  <text x="196" y="38" fill="#7d8ba1" font-size="10.5" letter-spacing="2"
         font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SQLITE · SYNTHETIC FIXTURE · 14 ROWS · 2 CIRCUITS</text>
   <circle cx="1076" cy="33" r="4" fill="#fbbf24"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
   <text x="1088" y="37" fill="#fbbf24" font-size="10.5" letter-spacing="2"
@@ -50,14 +50,14 @@
   </text>
 
   <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="15" xml:space="preserve">
-    <text x="88" y="92" clip-path="url(#q-c1)"><tspan fill="#a78bfa">SELECT</tspan><tspan fill="#c9d5e4"> backend</tspan><tspan fill="#64748b">,</tspan></text>
-    <text x="88" y="118" clip-path="url(#q-c2)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">ROUND</tspan><tspan fill="#64748b">(</tspan><tspan fill="#22d3ee">AVG</tspan><tspan fill="#64748b">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#64748b">), </tspan><tspan fill="#fbbf24">3</tspan><tspan fill="#64748b">) </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> mean_fidelity</tspan><tspan fill="#64748b">,</tspan></text>
-    <text x="88" y="144" clip-path="url(#q-c3)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#64748b">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#64748b">)         </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> scored</tspan><tspan fill="#64748b">,</tspan></text>
-    <text x="88" y="170" clip-path="url(#q-c4)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#64748b">(*)                </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> runs</tspan></text>
+    <text x="88" y="92" clip-path="url(#q-c1)"><tspan fill="#a78bfa">SELECT</tspan><tspan fill="#c9d5e4"> backend</tspan><tspan fill="#8796ab">,</tspan></text>
+    <text x="88" y="118" clip-path="url(#q-c2)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">ROUND</tspan><tspan fill="#8796ab">(</tspan><tspan fill="#22d3ee">AVG</tspan><tspan fill="#8796ab">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#8796ab">), </tspan><tspan fill="#fbbf24">3</tspan><tspan fill="#8796ab">) </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> mean_fidelity</tspan><tspan fill="#8796ab">,</tspan></text>
+    <text x="88" y="144" clip-path="url(#q-c3)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#8796ab">(</tspan><tspan fill="#c9d5e4">fidelity</tspan><tspan fill="#8796ab">)         </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> scored</tspan><tspan fill="#8796ab">,</tspan></text>
+    <text x="88" y="170" clip-path="url(#q-c4)"><tspan fill="#c9d5e4">       </tspan><tspan fill="#22d3ee">COUNT</tspan><tspan fill="#8796ab">(*)                </tspan><tspan fill="#a78bfa">AS</tspan><tspan fill="#c9d5e4"> runs</tspan></text>
     <text x="88" y="196" clip-path="url(#q-c5)"><tspan fill="#a78bfa">FROM</tspan><tspan fill="#c9d5e4">   experiment_runs</tspan></text>
-    <text x="88" y="222" clip-path="url(#q-c6)"><tspan fill="#a78bfa">WHERE</tspan><tspan fill="#c9d5e4">  circuit </tspan><tspan fill="#64748b">= </tspan><tspan fill="#fbbf24">'ghz_8q'</tspan></text>
+    <text x="88" y="222" clip-path="url(#q-c6)"><tspan fill="#a78bfa">WHERE</tspan><tspan fill="#c9d5e4">  circuit </tspan><tspan fill="#8796ab">= </tspan><tspan fill="#fbbf24">'ghz_8q'</tspan></text>
     <text x="88" y="248" clip-path="url(#q-c7)"><tspan fill="#a78bfa">GROUP BY</tspan><tspan fill="#c9d5e4"> backend</tspan></text>
-    <text x="88" y="274" clip-path="url(#q-c8)"><tspan fill="#a78bfa">ORDER BY</tspan><tspan fill="#c9d5e4"> mean_fidelity </tspan><tspan fill="#a78bfa">DESC</tspan><tspan fill="#64748b">;</tspan></text>
+    <text x="88" y="274" clip-path="url(#q-c8)"><tspan fill="#a78bfa">ORDER BY</tspan><tspan fill="#c9d5e4"> mean_fidelity </tspan><tspan fill="#a78bfa">DESC</tspan><tspan fill="#8796ab">;</tspan></text>
   </g>
   <rect x="341" y="261" width="9" height="17" fill="#22d3ee" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.01s" begin="3.36s" fill="freeze"/>
@@ -68,7 +68,7 @@
     <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
   </line>
 
-  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11.5" fill="#64748b" letter-spacing="1.4" opacity="0">
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="11.5" fill="#8796ab" letter-spacing="1.4" opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.60s" fill="freeze"/>
     <text x="88" y="332">BACKEND</text>
     <text x="430" y="332" text-anchor="end">MEAN_FIDELITY</text>
@@ -115,7 +115,7 @@
   </g>
 
   <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="5.20s" fill="freeze"/>
-    <text x="88" y="486" fill="#475569" font-size="11" letter-spacing="1.6"
+    <text x="88" y="486" fill="#7d8ba1" font-size="11" letter-spacing="1.6"
           font-family="'JetBrains Mono','SF Mono',Consolas,monospace">SIMULATOR_D SCORED 2 OF 3 RUNS. AVG SKIPS THE NULL, COUNT(*) DOES NOT. THAT GAP IS WHY BOTH COLUMNS ARE HERE.</text>
   </g>
 </svg>
